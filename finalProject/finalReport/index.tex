@@ -1,0 +1,228 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{cite} % Add this line for citation
+
+\bibliographystyle{plain}
+
+\title{The implementation of Bifrostconnect Front-end scope, re-design and
+development with the relevant back-end support develop.}
+\author{Fei Gu}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\section*{Abstract}
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+\section{Introduction}
+
+    \subsection{The project type}
+    \input{sections/introduction/background}
+
+    \subsection{About the company}
+    \input{sections/introduction/aboutCompany}
+
+    \subsection{About the project}
+    \input{sections/introduction/aboutProject}
+
+\pagebreak
+
+\section{Problem Statement}
+    
+        \subsection{Statement}
+        \input{sections/problemStatement/statement}
+    
+        \subsection{Situation}
+        \input{sections/problemStatement/situation}
+    
+        \subsection{Potential Solution}
+        \input{sections/problemStatement/potentialSolution}
+
+\pagebreak
+
+\section{Requirement Analysis}
+    
+        \subsection{Stakeholders}
+        \input{sections/requirementAnalysis/stakeholders/index}
+
+            \subsubsection{User}
+            \input{sections/requirementAnalysis/stakeholders/user}
+            
+            \subsubsection{Developer}
+            \input{sections/requirementAnalysis/stakeholders/developer}
+            
+            \subsubsection{Project Owner}
+            \input{sections/requirementAnalysis/stakeholders/projectOwner}
+    
+        \subsection{Scope}
+        \input{sections/requirementAnalysis/scope}
+    
+        \subsection{Goals}
+        \input{sections/requirementAnalysis/goals}
+
+        \subsection{Bussines Domain}
+        \input{sections/requirementAnalysis/bussinesDomain}
+
+\pagebreak
+
+\section{Software Development Methods}
+    % 项目的方法论
+    % 项目的方法论是指在项目管理和实施过程中所采用的一套系统化的方法和原则。
+    % 它包括项目的规划、组织、实施、监控和收尾等各个阶段的具体步骤和方法。
+    % 项目的方法论可以帮助项目团队有效地管理和控制项目，确保项目按时、按质、按成本完成，
+    % 并达到预期的目标和利益。常见的项目方法论包括敏捷开发、瀑布模型、迭代开发等。
+    % 选择适合的项目方法论对于项目的成功至关重要。
+
+    \subsection{Agile Software Development}
+    \input{sections/softwareDevelopmentMethods/agileSoftwareDevelopment}
+
+    \subsection{Unified Process}
+    \input{sections/softwareDevelopmentMethods/unifiedProcess}
+
+    \subsection{Feature Driven Development}
+    \input{sections/softwareDevelopmentMethods/featureDrivenDevelopment/index}
+    
+        \subsubsection{Develop an overall model}
+        \input{sections/softwareDevelopmentMethods/featureDrivenDevelopment/developAnOverallModel}
+        
+        \subsubsection{Feature list}
+        \input{sections/softwareDevelopmentMethods/featureDrivenDevelopment/featureList/index}
+
+\pagebreak
+
+\section{Software Design}
+
+    \subsection{Technology selection}
+    \input{sections/softwareDesign/technologySelection/index}
+
+            \subsubsection{Front-end}
+            \input{sections/softwareDesign/technologySelection/frontEnd}
+            
+            \subsubsection{Back-end}
+            \input{sections/softwareDesign/technologySelection/backEnd}
+            
+            \subsubsection{Database}
+            \input{sections/softwareDesign/technologySelection/database}
+            
+            \subsubsection{Data communication}
+            \input{sections/softwareDesign/technologySelection/dataCommunication}
+            
+            \subsubsection{DevOps}
+            \input{sections/softwareDesign/technologySelection/devOps}
+
+    \subsection{Architecture design}
+
+        % 架构设计
+        % 详细的介绍项目的架构设计, 包括前端的架构设计, 后端的架构设计, 以及前后端的交互设计.
+        % 也包括相关的中间件, 通信的协议和架构, 以及相关的数据库设计.
+        
+        \subsubsection{overall architecture}
+        \input{sections/softwareDesign/architectureDesign/overallArchitecture}
+
+        \subsubsection{Front-end}
+        \input{sections/softwareDesign/architectureDesign/frontEndArchitecture}
+
+        \subsubsection{Back-end}
+        \input{sections/softwareDesign/architectureDesign/backEndArchitecture}
+
+        \subsubsection{Data communication and storage}
+        \input{sections/softwareDesign/architectureDesign/dataCommunicationArchitecture}
+
+    \subsection{Domain model}
+    \input{sections/softwareDesign/domainModel/index}
+
+    \subsection{Database design}
+    % 数据库领域模型 ER 图
+    % 包括表和字段的设置.
+    % 对于私有键和外键的设置.
+
+    \subsection{Back-end design}
+    % 后端对象模型
+    % 以及对于对象模型的增删改查
+    % 以及相关的其他服务的设计
+
+    \subsection{Front-end design}
+    % 对于前端的页面结构的设计 
+    % 页面的状态的设计, 交互设计
+
+    \subsection{FlatBuffers design}
+    % schema 的设计
+
+    \subsection{DevOps CI/CD process design} % #page6
+
+        \subsubsection{Version Control}
+        % 版本控制
+        % 详细的介绍版本控制, 包括版本控制的工具, 版本控制的流程, 版本控制的部署.
+
+        \subsubsection{Branching Strategy}
+        % 分支策略
+        % 详细的介绍分支策略, 包括分支策略的工具, 分支策略的流程, 分支策略的部署.
+
+        \subsubsection{Continuous Integration}
+        % 持续集成
+        % 详细的介绍持续集成, 包括持续集成的工具, 持续集成的流程, 持续集成的部署.
+
+        \subsubsection{Continuous Delivery}
+        % 持续交付
+        % 详细的介绍持续交付, 包括持续交付的工具, 持续交付的流程, 持续交付的部署.
+
+        \subsubsection{Continuous Deployment}
+        % 持续部署
+        % 详细的介绍持续部署, 包括持续部署的工具, 持续部署的流程, 持续部署的部署.
+
+\pagebreak
+
+\section{Software Development} 
+
+    \subsection{Front-end}
+    % 前端开发
+    % 详细的介绍前端的开发, 包括前端的开发环境, 前端的开发工具, 前端的开发语言, 前端的开发框架, 前端的开发流程, 前端的开发测试, 前端的开发部署.
+
+    \subsection{Back-end}
+    % 后端开发
+    % 详细的介绍后端的开发, 包括后端的开发环境, 后端的开发工具, 后端的开发语言, 后端的开发框架, 后端的开发流程, 后端的开发测试, 后端的开发部署.
+
+    \subsection{Database}
+
+    \subsection{WebRTC}
+
+    \subsection{MQTT}
+
+    \subsection{RESTful API}
+
+    \subsection{Authentication}
+
+\pagebreak
+
+\section{Conclusion} 
+
+    \subsection{Result}
+    % 项目的结果
+    % 项目的结果是什么, 项目的结果是否达到了预期的目标, 项目的结果是否达到了预期的效果, 项目的结果是否达到了预期的质量.
+
+    \subsection{Discussion}
+    % 项目的讨论
+    % 项目的讨论是什么, 项目的讨论是对于项目的结果的讨论, 项目的讨论是对于项目的结果的分析, 项目的讨论是对于项目的结果的评价.
+
+    \subsection{Future Work}
+    % 项目的未来工作
+    % 项目的未来工作是什么, 项目的未来工作是对于项目的结果的未来工作, 项目的未来工作是对于项目的结果的未来工作的分析, 项目的未来工作是对于项目的结果的未来工作的评价.
+
+
+\pagebreak
+
+\bibliography{bibliography}
+
+\pagebreak
+
+% \begin{appendices}
+%     \section{Appendix}
+% \end{appendices} 
+
+\end{document}
