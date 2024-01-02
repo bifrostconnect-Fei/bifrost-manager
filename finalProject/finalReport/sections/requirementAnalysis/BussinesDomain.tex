@@ -16,3 +16,44 @@
 % 同时根据关系, 指定表之间的关系, 定义私有键和外来键, 这样就可以得到数据库模型
 % 然后还可以对后端对象的领域模型进行设计, 这个对象领域模型就是后端对象的基础, 
 
+As we already discrbed about the bussines target and requirement 
+about this project. We can identify the bussines domain model as following
+entitis:
+
+\begin{itemize}
+    \item User
+    \item Device
+    \item Organization
+    \item Group
+\end{itemize}
+
+\paragraph{User} is the entity that will use all the product and solution 
+in the bussines domain. 
+
+The User have the following attributes:
+
+\begin{itemize}
+    \item name : the name of the user
+    \item email : the email of the user
+    \item password : the password of the user
+    \item role : the role of the user, can be admin or normal
+    \item orgainzation : the organization that the user belongs to
+    \item group : the group that the user belongs to
+\end{itemize}
+
+\paragraph{Device} is the entity that will be used by the user to access 
+to the remote equipment.
+
+The Device have the following attributes:
+
+\begin{itemize}
+    \item name : the name of the device
+    \item ip : the ip address of the device
+    \item port : the port of the device
+    \item type : the type of the device, can be attend or non-attend
+    \item organization : the organization that the device belongs to
+    \item group : the group that the device belongs to
+\end{itemize}
+
+
+
