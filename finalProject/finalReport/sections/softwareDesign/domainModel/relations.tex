@@ -1,0 +1,12 @@
+The relation between the entities will following the bussines domain model. 
+Following the logic of the all bussines area of the project. 
+The first pair of relation is the user and the device: 
+The user can oprating mutiple devices, but the device will only be operated 
+by one user at a time. The group have a many to many relation with the user.
+The user can be in mutiple groups, and the group can have mutiple users.
+The group have a many to many relation also with the device.
+The device can be in mutiple groups, and the group can have mutiple devices.
+The organization have one to many relation with the user and the device.
+Which means the user and the device can only be in one organization.
+The organization can not share the user and the device with other organization as well.
+Eventually, the organization have a one to many relation with the groups. 

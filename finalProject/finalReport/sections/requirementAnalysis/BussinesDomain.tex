@@ -20,40 +20,38 @@ As we already discrbed about the bussines target and requirement
 about this project. We can identify the bussines domain model as following
 entitis:
 
+\paragraph{Organization}
+The organization have all the users and devices, which can set up the users and devices as a group.
+Therefore the organization have the following attributes:
 \begin{itemize}
-    \item User
-    \item Device
-    \item Organization
-    \item Group
+    \item name: The name of the organization.
+    \item users: which will be a list of users.
+    \item devices: which will be a list of devices.
+    \item groups: which will be a list of groups.
 \end{itemize}
 
-\paragraph{User} is the entity that will use all the product and solution 
-in the bussines domain. 
-
-The User have the following attributes:
-
+\paragraph{User}
+The user can be the technitian or the oprator who is using the device to connect
+to the remote equipment. The user will be the end point which will start all of the process and end of the process as well.
+The user have the following attributes:
 \begin{itemize}
-    \item name : the name of the user
-    \item email : the email of the user
-    \item password : the password of the user
-    \item role : the role of the user, can be admin or normal
-    \item orgainzation : the organization that the user belongs to
-    \item group : the group that the user belongs to
+    \item username: which will identify the user.
 \end{itemize}
 
-\paragraph{Device} is the entity that will be used by the user to access 
-to the remote equipment.
-
-The Device have the following attributes:
-
+\paragraph{Device}
+The device is the hardware which will be connected to the remote equipment to allowed the user to control the remote equipment.
+The device have the following attributes:
 \begin{itemize}
-    \item name : the name of the device
-    \item ip : the ip address of the device
-    \item port : the port of the device
-    \item type : the type of the device, can be attend or non-attend
-    \item organization : the organization that the device belongs to
-    \item group : the group that the device belongs to
+    \item name: which will identity the device.
 \end{itemize}
-
-
-
+    
+\paragraph{Group}
+The group is the collection of the users and devices, which will be set up by the organization. 
+Only the user and the device belong to the same group, the user can oprate the device, and only both the devices in the same group.
+The user can create the tunnel between the devices in the same group.
+The group have the following attributes:
+\begin{itemize}
+    \item name: which will identity the group.
+    \item users: which will be a list of users.
+    \item devices: which will be a list of devices.
+\end{itemize}

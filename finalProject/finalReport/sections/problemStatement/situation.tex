@@ -2,19 +2,41 @@
 % 这一部分要详细的介绍关于项目的原始背景, 因为在之后要根据这些背景写明项目的意义和解决方案.
 % 所以项目的现状, 项目的历史问题, 现有项目难以开发和维护的原因, 
 
-The current BifrostConnect front-end application consist of the Device Manager (DM) 
-and Remote Access Interface (RAI) two different user interface.
-Which means the user need to manage their devices and users in the one application, 
-and oprate their devices to use the bifrost product in other web application as well. 
-However, the RAI consists of two different user interfaces referred to as the Classic RAI and Tunnel RAI. 
-Those two user interfaces will leading the user to different web application 
-when user wish to create a different type of access solution.
+% The current BifrostConnect front-end application consist of the Device Manager (DM) 
+% and Remote Access Interface (RAI) two different user interface.
+% Which means the user need to manage their devices and users in the one application, 
+% and oprate their devices to use the bifrost product in other web application as well. 
+% However, the RAI consists of two different user interfaces referred to as the Classic RAI and Tunnel RAI. 
+% Those two user interfaces will leading the user to different web application 
+% when user wish to create a different type of access solution.
 
-The reason for this situation occurred is because the bifrost product is developed focus on the device 
-and the application part was not considered as important as the device part. 
-Therefore, the application part was developed by different developers with different design logic.
-And the application functionality was not been properly through out the development process. 
-Which cause the design logic of this product is not scalable, leading to decreasing user experience, 
-and exponential growth of code complexity which makes it increasingly challenging to maintain and improve. 
-Also the product design style lacks scalability due to lack of modularity and code consistency, 
-and the operation logic is not clear.
+% The reason for this situation occurred is because the bifrost product is developed focus on the device 
+% and the application part was not considered as important as the device part. 
+% Therefore, the application part was developed by different developers with different design logic.
+% And the application functionality was not been properly through out the development process. 
+% Which cause the design logic of this product is not scalable, leading to decreasing user experience, 
+% and exponential growth of code complexity which makes it increasingly challenging to maintain and improve. 
+% Also the product design style lacks scalability due to lack of modularity and code consistency, 
+% and the operation logic is not clear.
+
+The existing BifrostConnect front-end application is divided into two distinct user interfaces:
+the Device Manager (DM) and the Remote Access Interface (RAI). 
+This division requires users to manage their devices and users in one application, 
+while operating their devices to use the Bifrost product in another web application. 
+Moreover, the RAI is further split into two different user interfaces, 
+known as the Classic RAI and Tunnel RAI. 
+These interfaces direct users to different web applications 
+depending on the type of access solution they wish to create.
+
+This situation arose because the development of the Bifrost product was primarily focused 
+on the device, with the application part not receiving as much attention. 
+As a result, the application part was developed by different developers, 
+each with their own design logic. 
+This led to a lack of thorough planning for the application functionality 
+during the development process. Consequently, 
+the design logic of the product is not scalable, 
+which has resulted in a diminished user experience 
+and an exponential increase in code complexity, 
+making it increasingly difficult to maintain and improve. 
+Furthermore, the product design style lacks scalability due to a lack of modularity 
+and code consistency, and the operation logic is unclear.
