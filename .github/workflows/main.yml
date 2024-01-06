@@ -14,8 +14,7 @@
                   node-version: "18.x"
               - name: front-end build
                 run: |
-                  pwd
-                  
+                  ls
                   npm install
                   npm run build
                   echo "front end build success"
