@@ -13,7 +13,7 @@
                 with:
                   node-version: "18.x"
               - run: |
-                  cd frontEnd
+                  cd front-end
                   npm install
                   npm run build
                   echo "front end build success"
