@@ -12,10 +12,9 @@
                 uses: actions/setup-node@v4.0.1
                 with:
                   node-version: "18.x"
-              - name: front-end build
-                run: |
-                  cd ..
-                  ls -al 
+                  cache: "npm"
+              - run: |
+                  cd frontEnd
                   npm install
                   npm run build
                   echo "front end build success"
