@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Homebrew) (preloaded format=xelatex 2023.6.22)  6 JAN 2024 23:32
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Homebrew) (preloaded format=xelatex 2023.6.22)  6 JAN 2024 23:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -422,10 +422,10 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <8> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 3.
 ) [24] (./codeSnappe/deviceComponent.tex) (./codeSnappe/tableComponent.tex) (./codeSnappe/useGetDeviceList.tex) (./codeSnappe/deviceSlice.tex) [25] [26] [27] [28] (./codeSnappe/storeIndex.tex)) [29] [30] (./sections/softwareDevelopment/overallDevelopement/backEnd/index.tex [31] (./codeSnappe/backEnd/domainLayerEntities.tex) (./codeSnappe/backEnd/domainLayerInterface.tex) (./codeSnappe/backEnd/applicationLayerService.tex) [32] [33]) [34] (./sections/softwareDevelopment/overallDevelopement/devOps/index.tex) [35] [36] (./index.aux) ) 
 Here is how much of TeX's memory you used:
- 16208 strings out of 476683
- 360245 string characters out of 5795667
+ 16183 strings out of 476683
+ 359985 string characters out of 5795667
  3071018 words of memory out of 5000000
- 36065 multiletter control sequences out of 15000+600000
+ 36040 multiletter control sequences out of 15000+600000
  516239 words of font info for 57 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  84i,6n,89p,728b,1209s stack positions out of 10000i,1000n,20000p,200000b,200000s
