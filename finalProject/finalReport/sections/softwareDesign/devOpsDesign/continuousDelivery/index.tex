@@ -1,0 +1,30 @@
+Once the software is built, it is delivery to the test environment. 
+The test environment is a server that is used to E2E test and performance test the software.
+
+In this project, the test environment is a server that is running on the docker container.
+Therefore, the GitHub Actions will build the docker image and push the image to the private docker registry.
+
+After the docker image is pushed to the private docker registry, 
+the docker image will be pulled by the test environment server.
+Then the docker image will be run on the test environment server 
+with the fully project including the front-end, back-end, database, MQTT broker/client, and the WebRTC ICE server/ TUNE server.
+
+\paragraph{E2E Testing}
+
+The E2E testing is the practice of testing the software from the user's perspective.
+The E2E testing will test the software as a whole project, 
+which means the front-end, back-end, database, MQTT broker/client, and the WebRTC ICE server/ TUNE server.
+
+The E2E testing start from the front-end, the E2E testing framework will open the browser in the test environment server,
+and then the E2E testing framework will simulate the user's action to require the feature's function.
+And then check the result of the action is correct or not.
+
+For example, the E2E testing framework will open the browser and then login to the system.
+After login to the system, the E2E testing framework will check the login result as the expected result.
+
+\paragraph{Performance Testing}
+
+The performance testing is the practice of testing the software's performance.
+It's including the response time, throughput, and the resource utilization.
+
+

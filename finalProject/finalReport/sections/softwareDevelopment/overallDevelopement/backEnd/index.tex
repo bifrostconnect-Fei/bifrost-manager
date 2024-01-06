@@ -1,0 +1,80 @@
+The back-end use dotNet framework to develop, the language is C\#.
+
+During the development of the back-end, the overall of developement is create 
+the Clean Architecture for the back-end.
+
+For create the architecure, we need the following layers:
+\begin{itemize}
+    \item Domain Layer: 
+    \item Application Layer: The application layer is the layer that contains
+    the application logic, which is implement the domain service interface
+    and offer the service to the presentation layer, infrastructure layer and the test layer.
+    \item Infrastructure Layer: The infrastructure layer is the layer that
+    contains the implementation of the application service interface, 
+    there are not just one of the infrastruecture but many, for example,
+    \begin{itemize}
+        \item Database infrastructure: The database infrastructure is the layer which
+        contains the implementation of the database service interface,
+        it can be the DTO, the Repository , the Query, etc.
+        \item MQTT infrastructure: The MQTT infrastructure will contains the back-end MQTT client which 
+        will subscribe the MQTT topic and publish the MQTT topic though the MQTT broker to conmunicate
+        with the device.
+        \item WebRTC infrastructure: The WebRTC infrastructure is working for offer the WebRTC service
+        which spicific as the ICE config and TURN server.
+    \end{itemize} 
+    \item Test Layer: The test layer is the layer that contains the test code for all of layers.
+\end{itemize}
+
+\paragraph{Domain Layer}
+The domain layer is the heart of the software, 
+it contains the business logic and the entities of the software.
+
+The domain layer include two parts:
+
+The entities of the software, for example, the user entity, the device entity, etc. 
+See the figure \ref{fig:domainLayerEntities}.
+
+\input{codeSnappe/backEnd/domainLayerEntities.tex}
+
+The domain service of the software, this part included the interface 
+which indentify the service which the application layer should be implement
+to reach the opration of the domain. 
+
+It use for limited the application layer to access the domain layer. 
+
+See the figure \ref{fig:domainLayerInterface}.
+\input{codeSnappe/backEnd/domainLayerInterface.tex}
+
+\paragraph{Application Layer}
+The application layer is the layer that implement the domain service interface
+and offer the service to the presentation layer, infrastructure layer and the test layer.
+See the figure \ref{fig:applicationLayerService}.
+\input{codeSnappe/backEnd/applicationLayerService.tex}
+
+\paragraph{Infrastructure Layer}
+The infrasture layer working for implement the external service interface.
+For the overall of the infrasture layer, it can be the webAPI, the database repository, the MQTT, the WebRTC, etc.
+
+The webAPI implement the webAPI service interface from the application layer.
+And the webAPI will offer the RESTful API to the presentation layer which is the webAPI controller.
+Also the DTO, the Program.cs file as the the entry point of the back-end service and config file.
+
+The database repository implement the database service interface from the application layer.
+Out of the database reqpository, it also can be the database DTO, DbContext, Entities etc.
+
+The MQTT implement the MQTT service interface from the application layer, which contain the MQTT client,
+the MQTT broker, the MQTT topic util, etc.
+
+\paragraph{Test Layer}
+The test layer is the layer that offer the unit test for all of the layers. Which means that the test layer
+reference all of the layers but not necesseary to implement the interface of the layers.
+
+The unit test is testing the data type correct, the interface of the method have the correct parameters 
+and the return value type is correct, also the functions and methods interact as pure function, 
+which means that the function or method should not have the side effect. 
+
+\paragraph{Dependecy Injection}
+The dependecy injection is the design pattern which use for inject the dependency of the class.
+This is the most important design pattern for the Clean Architecture.
+
+\pagebreak

@@ -1,0 +1,44 @@
+\begin{figure}[htbp]
+    \begin{lstlisting}[language=React]
+        export const useGetDeviceList = () => {
+            const [deviceList, setDeviceList] = useState([]);
+            const [loading, setLoading] = useState(true);
+            const [error, setError] = useState(null);
+
+            const getDeviceList = async () => {
+                setLoading(true);
+
+                return fetch(
+                    env + "/api/devices",
+                    {
+                        method: "GET",
+                        headers: {
+                            "Content-Type": "application/json",
+                            Authorization: `Bearer ${localStorage.getItem(
+                                "token"
+                            )}`,
+                        },
+                    }
+                )
+                    .then((res) => res.json())
+                    .then((data) => {
+                        setDeviceList(data);
+                        setLoading(false);
+                    })
+                    .catch((error) => {
+                        setError(error);
+                        setLoading(false);
+                    });
+                )
+            };
+
+            useEffect(() => {
+                deviceList.length === 0 && getDeviceList();
+            }, []);
+
+            return { deviceList, loading, error };
+        }
+    \end{lstlisting}
+    \caption{The useGetDeviceList hook}
+    \label{fig:useGetDeviceList}
+\end{figure}

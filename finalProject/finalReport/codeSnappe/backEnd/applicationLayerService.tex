@@ -1,0 +1,40 @@
+\begin{figure}[htbp]
+    \begin{lstlisting}{language=CSharp}
+    public class DeviceService: IDeviceService{
+
+        private IDeviceRepository _deviceRepository;
+
+        public DeviceService (IDeviceRepository deviceRepository)
+        {
+            _deviceRepository = deviceRepository ?? throw new InvalidDataException("deviceRepository can not be null");
+        }
+
+        public List<Device> GetAllDevice()
+        {
+            return _deviceRepository.FindAll();
+        }
+
+        public Device CreateDevice(Device device)
+        {
+            return _deviceRepository.CreateDevice(device);
+        }
+
+        public Device ReadDevice(Device device)
+        {
+            return _deviceRepository.ReadDevice(device);
+        }
+
+        public Device UpdateDevicee(Device device)
+        {
+            return _deviceRepository.UpdateDevice(device);
+        }
+
+        public Device DeleteDevice(Device device)
+        {
+            return _deviceRepository.DeleteDevice(device);
+        }
+}
+    \end{lstlisting}
+    \caption{Application Layer Service}
+    \label{fig:applicationLayerService}
+\end{figure}

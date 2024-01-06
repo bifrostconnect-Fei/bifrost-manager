@@ -1,0 +1,77 @@
+The front overall developement will create the basic front-end for the project.
+For develop the front-end, we need to create the following components:
+\begin{itemize}
+    \item pages
+    \item components
+    \item hooks
+    \item store
+    \item utils
+    \item styles
+\end{itemize}
+
+\paragraph{Pages}
+In the React, the page is the container of the application using the JSX syntax.
+The page is the structure of the application. 
+
+See the figure \ref{fig:devicePage} for the device page example.
+
+\input{codeSnappe/devicePage.tex}
+
+\paragraph{Components}
+The components are the reusable elements in the application.
+Which included two types of components: 
+\begin{itemize}
+    \item page components: the reusable page componets included multiple element components. 
+    Such as the user component, the device component, the group component, etc.
+    \item element components: the reusable basic elements.
+    Such as the button, the input, the select, etc.
+    \item spicific components: the components reusable with the spicific usage.
+    Such as the session component, the data channel component, etc.
+\end{itemize}
+
+See the figure \ref{fig:deviceComponent} for the device component example.
+
+See the figure \ref{fig:tableComponent} for the table component example.
+
+\input{codeSnappe/deviceComponent.tex}
+\input{codeSnappe/tableComponent.tex}
+
+\paragraph{Hooks}
+The hooks are the reusable functions in the application which used the React customize hooks.
+The hooks should be the pure functions. And should oprate its own scope and state.
+The hook can be invoked in any of the components. 
+See the figure \ref{fig:useGetDeviceList} for the useGetDeviceList hook example.
+
+\input{codeSnappe/useGetDeviceList.tex}
+
+\paragraph{Store}
+The store is the global state of the application. 
+In this project we use the Redux to manage the global state.
+Instead using the original Redux, we use the Redux Toolkit to simplify the Redux developement.
+
+Therefore, the store's \texttt{index.js} file is the Redux Toolkit store 
+which used for combine the reducers and the middlewares. 
+The store's \texttt{slice.js} file is the reducer of the store 
+which used for manage the state of the store. 
+
+See the figure \ref{fig:storeIndex} for the store index example. 
+
+The Slice is the reducer of the store. 
+It is a collection that contains the state and the reducers for the one kind of the states.
+
+For example, the deviceSlice is the slice for the device state. 
+It contains multiple states such like the deviceList, the deviceInfo, the deviceStatus, etc.
+And it contains multiple reducers to modify the relevant states when there is an action to cause the state change.
+
+See the figure \ref{fig:deviceSlice} for the deviceSlice example.
+\input{codeSnappe/deviceSlice.tex}
+
+\input{codeSnappe/storeIndex.tex}
+
+\paragraph{Utils}
+The utils are the pure functions in the application which can be reused in any of the components.
+
+\paragraph{Styles}
+The styles are the style sheets of the application.
+
+\pagebreak

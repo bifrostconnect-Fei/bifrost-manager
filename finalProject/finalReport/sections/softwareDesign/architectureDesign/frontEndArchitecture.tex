@@ -1,52 +1,107 @@
+In the architecture design of the front-end, the primary goal is to migrate the existing 
+remote access interface and the tunnel interface into the web application.
+And the secondary goal is refactoring the device manager as the well structured web application.
 
-In the architecture design of the front-end,  
-the goal is to meet the user's usage requirements, 
-which includes intuitive operations for data manipulation (create, read, update, delete) 
-and simple creation of data channels,as well as managing and visualizing data channels.
-
-Therefore, the front-end utilizes the React framework based on view design 
-and the Redux framework based on state and data flow.
+The front-end utilizes the React framework based on view design and the Redux framework 
+based on state and data flow.
 
 The structure of the React framework divides the web page into multiple components 
-based on modularity. Each component has its own state and properties.
+based on modularity.Each component has its own state and properties.
+
 Components are categorized into container components, presentational components, 
-and functional components. 
+and functional components.
 
 Container components manage data and state, presentational components display data 
 and state, and functional components implement specific functionalities.
 
-In this project, following the structure of the React framework and adopting a component-based approach,
-the entire project is divided into the following components:
+As beginning of this project, the migrate two interfaces which was use the vanilla JS, 
+have to be redesigned and refectoring to the React component.
 
-\begin{tikzpicture}[
-    file/.style={draw, rectangle, minimum width=2cm, minimum height=0.8cm},
-    folder/.style={draw, rectangle, minimum width=2cm, minimum height=0.8cm, fill=gray!20},
-    arrow/.style={->, shorten >=2pt, shorten <=2pt}
-]
+\paragraph{Remote Access Interface}
 
-% Folders
-\node[folder] (src) at (0,0) {src};
-\node[folder] (components) at (-2,-1.5) {components};
-\node[folder] (pages) at (0,-1.5) {pages};
-\node[folder] (store) at (2,-1.5) {store};
-\node[folder] (utils) at (-2,-3) {utils};
-\node[folder] (hooks) at (0,-3) {hooks};
+The remote access interface need to be redesigned as a single page application, 
+and its perpose is to provide the interface to create the reomote access connection, 
+display the connection status, the device status, and the data stream from the device.
 
-% Files
-\node[file] (pageComponent) at (-2,-4.5) {pageComponent};
-\node[file] (elementComponent) at (-2,-6) {elementComponent};
-% ... add more files
+For the UI of the remote access interface, the component will be inject into the RAI page 
+from the page component, and the component will be the bifrost page component which is 
+the reusable page component directory.  
+the pototype descibed following:
 
-% Connections
-\draw[arrow] (src) -- (components);
-\draw[arrow] (src) -- (pages);
-\draw[arrow] (src) -- (store);
-\draw[arrow] (src) -- (utils);
-\draw[arrow] (src) -- (hooks);
-\draw[arrow] (components) -- (pageComponent);
-\draw[arrow] (components) -- (elementComponent);
-% ... add more connections
+\begin{itemize}
+    \item The top of the component is the status bar, which contains the status of the device.
+    \begin{itemize}
+        \item The left of the status bar is the device name, serial number, and device framework version.
+        \item The middle of the status bar is the device status, it will display the device status, 
+        such like charging status, battery status, and the device connection status.
+        \item The right of the status bar is the exit session button, it will exit the current session.
+    \end{itemize}
+    \item The main content is the body of the component, which display the data stream from the device.
+    \item The bottom of the compoent is the control bar, it includes two part.
+    \begin{itemize}
+        \item The left of the control bar is the tag swither, it will switch the data stream between the
+        KVM data stream, and the serial data stream.
+        \item The right of the control bar is the control buttons, it include the setting button, 
+        will display the setting menu, the full screen button, will display the data stream in full screen
+        in the browser, and keymap button, will display the keymap menu.
+    \end{itemize}
+\end{itemize}
 
-\end{tikzpicture}
+The UI state will be isolated from the session state which will be interactive with the session state.
+For UI the state will not store in the redux store, it will store in each of the component.
 
+For the session be create for this interface, it will be store in the redux store as the session state.
+The session state will be store in the session reducer, and the session reducer will be combine with
+the root reducer. 
 
+The session state will be store as the object, and the object will be store in the session array.
+Use this pattern we can easily to create mutiple session for the remote access interface, and easily to 
+manage, switch, and delete the session.
+
+Each session will have its own state, the state include:
+\begin{itemize}
+    \item id, which is the unique id for the session. Because each of the device can only
+    active one session at the same time, so the session id will be the same as the device serial number.
+    \item name, which is the name of the session, we can use the device name 
+    as the session name.
+    \item status, this is the flag of the session active or not.
+    \item WebRTC connection, which is the WebRTC connection object of the session.
+    \item MQTT connection, which is the MQTT connection object of the session.
+\end{itemize}
+
+For create the session , there are some hooks will be use in the component, for example:
+\begin{itemize}
+    \item useCreateSession, this hook will be use to create the session, 
+    and it will return the session object.
+    \item useCloseSession, this hook will be use to close the session, 
+    and it will return the session object.
+    \item keepAliveSession, this hook will be use to keep the session alive, 
+    and it will return the session object.
+    \item useMQTT, this hook will be use to subscribe the MQTT topic, receive the MQTT message, 
+    and publish the MQTT message.
+    \item useWebRTC, this hook will be use to create the WebRTC connection, and so on.
+    \item useFlatBuffer, this hook will be use to process the flatbuffer message.
+\end{itemize}
+
+\paragraph{Tunnel Interface}
+Same as the remote access interface, the tunnel interface also need to be redesigned  
+as a single page application,
+and its perpose is to provide the interface to create the tunnel connection, display the connection status,
+the device status, and the data stream from the device.
+
+For the UI of the tunnel interface, it will be following the same pattern as the remote access interface,
+and the UI design will be little different.
+
+The reason fot the different UI design is the tunnel interface will be use two device to create the tunnel,
+connecting each of the end point though the tunnel.
+
+The UI will be scribed following:
+\begin{itemize}
+    \item The top of the component is the connecting status bar, which contains the each of the device status.
+    Between the two device status will be the tunnel status. 
+    \item The main content is the body of the component, excipt to display the data stream from the device, 
+    it also include a sidebar for display the IP mapping list.
+\end{itemize}
+
+The rest of the state design and the hooks design will be the same as the remote access interface 
+depends on the reuse of the component. 

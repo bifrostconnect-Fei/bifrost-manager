@@ -43,22 +43,3 @@ data presentation and control are handled by the frontend,
 so this layer is not needed.
 
 
-\begin{tikzpicture}[node distance=2cm, every edge/.style={draw, thick}]
-    % Layers
-    \node[rectangle, draw, minimum width=4cm, minimum height=1cm] (presentation) {Presentation};
-    \node[rectangle, draw, minimum width=4cm, minimum height=1cm, below of=presentation] (infrastructure) {Infrastructure};
-    \node[rectangle, draw, minimum width=4cm, minimum height=1cm, below of=infrastructure] (application) {Application};
-    \node[rectangle, draw, minimum width=4cm, minimum height=1cm, below of=application] (domain) {Domain};
-
-    % Dependencies
-    \draw[->] (presentation) -- (infrastructure);
-    \draw[->] (infrastructure) -- (application);
-    \draw[->] (application) -- (domain);
-
-    % Labels
-    \node[above of=presentation, yshift=-0.5cm] {Presentation Layer};
-    \node[above of=infrastructure, yshift=-0.5cm] {Infrastructure Layer};
-    \node[above of=application, yshift=-0.5cm] {Application Layer};
-    \node[above of=domain, yshift=-0.5cm] {Domain Layer};
-\end{tikzpicture}
-

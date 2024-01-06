@@ -24,51 +24,70 @@
 \contentsline {subsubsection}{\numberline {4.1.2}Feature Driven Development}{10}{}%
 \contentsline {subsubsection}{\numberline {4.1.3}Develop an overall model}{11}{}%
 \contentsline {subsubsection}{\numberline {4.1.4}Feature list}{11}{}%
-\contentsline {subsection}{\numberline {4.2}Technology selection}{11}{}%
-\contentsline {subsubsection}{\numberline {4.2.1}Front-end}{11}{}%
-\contentsline {paragraph}{JAVASCRIPTl}{11}{}%
-\contentsline {paragraph}{React}{11}{}%
-\contentsline {paragraph}{React-Router}{11}{}%
+\contentsline {subsection}{\numberline {4.2}Technology selection}{12}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}Front-end}{12}{}%
+\contentsline {paragraph}{JAVASCRIPTl}{12}{}%
+\contentsline {paragraph}{React}{12}{}%
+\contentsline {paragraph}{React-Router}{12}{}%
 \contentsline {paragraph}{Redux}{12}{}%
 \contentsline {paragraph}{RTK}{12}{}%
 \contentsline {paragraph}{RTKQ}{12}{}%
 \contentsline {paragraph}{TailwindCSS}{12}{}%
-\contentsline {paragraph}{Semantic UI}{12}{}%
-\contentsline {paragraph}{Jest}{12}{}%
-\contentsline {subsubsection}{\numberline {4.2.2}Back-end}{12}{}%
-\contentsline {paragraph}{CSharp}{12}{}%
-\contentsline {paragraph}{ASP.NET Core}{12}{}%
-\contentsline {paragraph}{Entity Framework}{12}{}%
-\contentsline {subsubsection}{\numberline {4.2.3}Database}{12}{}%
-\contentsline {paragraph}{SQLite}{12}{}%
+\contentsline {paragraph}{Semantic UI}{13}{}%
+\contentsline {paragraph}{Jest}{13}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}Back-end}{13}{}%
+\contentsline {paragraph}{CSharp}{13}{}%
+\contentsline {paragraph}{dotNET Core}{13}{}%
+\contentsline {paragraph}{Entity Framework}{13}{}%
+\contentsline {subsubsection}{\numberline {4.2.3}Database}{13}{}%
+\contentsline {paragraph}{SQLite}{13}{}%
 \contentsline {subsubsection}{\numberline {4.2.4}Data communication}{13}{}%
 \contentsline {paragraph}{HTTP}{13}{}%
 \contentsline {paragraph}{Flatbuffers}{13}{}%
-\contentsline {paragraph}{MQTT}{13}{}%
-\contentsline {paragraph}{webrtc}{13}{}%
-\contentsline {subsubsection}{\numberline {4.2.5}DevOps}{13}{}%
-\contentsline {paragraph}{Git}{13}{}%
-\contentsline {paragraph}{GitHub}{13}{}%
-\contentsline {paragraph}{GitHub Actions}{13}{}%
+\contentsline {paragraph}{MQTT}{14}{}%
+\contentsline {paragraph}{webrtc}{14}{}%
+\contentsline {subsubsection}{\numberline {4.2.5}DevOps}{14}{}%
+\contentsline {paragraph}{Git}{14}{}%
+\contentsline {paragraph}{GitHub}{14}{}%
+\contentsline {paragraph}{GitHub Actions}{14}{}%
 \contentsline {paragraph}{Docker}{14}{}%
-\contentsline {subsection}{\numberline {4.3}Architecture design}{14}{}%
-\contentsline {subsubsection}{\numberline {4.3.1}Front-end}{14}{}%
-\contentsline {subsubsection}{\numberline {4.3.2}Back-end}{16}{}%
-\contentsline {subsubsection}{\numberline {4.3.3}Data communication and storage}{17}{}%
-\contentsline {subsection}{\numberline {4.4}Domain model}{19}{}%
-\contentsline {subsection}{\numberline {4.5}DevOps CI/CD process design}{19}{}%
-\contentsline {subsubsection}{\numberline {4.5.1}Continuous Integration}{19}{}%
-\contentsline {subsubsection}{\numberline {4.5.2}Continuous Delivery}{19}{}%
-\contentsline {subsubsection}{\numberline {4.5.3}Continuous Deployment}{19}{}%
-\contentsline {section}{\numberline {5}Software Development}{20}{}%
-\contentsline {subsection}{\numberline {5.1}Front-end}{20}{}%
-\contentsline {subsection}{\numberline {5.2}Back-end}{20}{}%
-\contentsline {subsection}{\numberline {5.3}Database}{20}{}%
-\contentsline {subsection}{\numberline {5.4}WebRTC}{20}{}%
-\contentsline {subsection}{\numberline {5.5}MQTT}{20}{}%
-\contentsline {subsection}{\numberline {5.6}RESTful API}{20}{}%
-\contentsline {subsection}{\numberline {5.7}Authentication}{20}{}%
-\contentsline {section}{\numberline {6}Conclusion}{21}{}%
-\contentsline {subsection}{\numberline {6.1}Result}{21}{}%
-\contentsline {subsection}{\numberline {6.2}Discussion}{21}{}%
-\contentsline {subsection}{\numberline {6.3}Future Work}{21}{}%
+\contentsline {subsection}{\numberline {4.3}Architecture design}{15}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}Front-end}{16}{}%
+\contentsline {paragraph}{Remote Access Interface}{16}{}%
+\contentsline {paragraph}{Tunnel Interface}{18}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}Back-end}{19}{}%
+\contentsline {subsubsection}{\numberline {4.3.3}Data communication and storage}{20}{}%
+\contentsline {subsection}{\numberline {4.4}DevOps CI/CD process design}{22}{}%
+\contentsline {subsubsection}{\numberline {4.4.1}Continuous Integration}{22}{}%
+\contentsline {paragraph}{Pull Request}{22}{}%
+\contentsline {paragraph}{Continuous Testing}{22}{}%
+\contentsline {subsubsection}{\numberline {4.4.2}Continuous Delivery}{22}{}%
+\contentsline {paragraph}{E2E Testing}{23}{}%
+\contentsline {paragraph}{Performance Testing}{23}{}%
+\contentsline {subsubsection}{\numberline {4.4.3}Continuous Deployment}{23}{}%
+\contentsline {paragraph}{Production Environment}{23}{}%
+\contentsline {paragraph}{Comtinuing Opration}{23}{}%
+\contentsline {section}{\numberline {5}Software Development}{24}{}%
+\contentsline {subsection}{\numberline {5.1}Overall development}{24}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Front-end}{24}{}%
+\contentsline {paragraph}{Pages}{24}{}%
+\contentsline {paragraph}{Components}{25}{}%
+\contentsline {paragraph}{Hooks}{25}{}%
+\contentsline {paragraph}{Store}{25}{}%
+\contentsline {paragraph}{Utils}{29}{}%
+\contentsline {paragraph}{Styles}{29}{}%
+\contentsline {subsubsection}{\numberline {5.1.2}Back-end}{31}{}%
+\contentsline {paragraph}{Domain Layer}{32}{}%
+\contentsline {paragraph}{Application Layer}{32}{}%
+\contentsline {paragraph}{Infrastructure Layer}{32}{}%
+\contentsline {paragraph}{Test Layer}{34}{}%
+\contentsline {paragraph}{Dependecy Injection}{34}{}%
+\contentsline {subsubsection}{\numberline {5.1.3}DevOps}{35}{}%
+\contentsline {subsection}{\numberline {5.2}Feature development}{35}{}%
+\contentsline {subsubsection}{\numberline {5.2.1}Use Case 1}{35}{}%
+\contentsline {subsubsection}{\numberline {5.2.2}Feature 1}{35}{}%
+\contentsline {subsubsection}{\numberline {5.2.3}Feature 2}{35}{}%
+\contentsline {section}{\numberline {6}Conclusion}{36}{}%
+\contentsline {subsection}{\numberline {6.1}Result}{36}{}%
+\contentsline {subsection}{\numberline {6.2}Discussion}{36}{}%
+\contentsline {subsection}{\numberline {6.3}Future Work}{36}{}%

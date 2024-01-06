@@ -1,0 +1,30 @@
+The core of devOps process alway is the CI/CD process, this process will contral
+and manage the whole software development process.
+
+In this project, we use the GitHub Actions as the CI/CD process.
+Therefore we can easily config the main.yml file inside of the .github/workflow folder.
+
+\begin{lstlisting}
+    name: CI/CD
+    on: 
+        push:
+            branches: [ feature ]
+        pull_request:
+            branches: [ feature ]
+    jobs:
+        build:
+            runs-on: ubuntu-latest
+            steps:
+                - uses: actions/checkout@v2
+                - name: front-end build
+                    run: |
+                        cd frontEnd
+                        npm install
+                        npm run build
+                - name: back-end build
+                    run: |
+                        cd backEnd
+                        dotnet restore
+                        dotnet build
+                        
+\end{lstlisting}

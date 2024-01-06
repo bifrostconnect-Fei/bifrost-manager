@@ -3,7 +3,111 @@
 \usepackage{amsmath}
 \usepackage{tikz}
 
+% libaries
 \usetikzlibrary{shapes,arrows}
+
+%Define the listing package
+\usepackage{listings} %code highlighter
+\usepackage{color} %use color
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+%Customize a bit the look
+\lstset{ %
+    backgroundcolor=\color{white}, % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+    basicstyle=\footnotesize, % the size of the fonts that are used for the code
+    breakatwhitespace=false, % sets if automatic breaks should only happen at whitespace
+    breaklines=true, % sets automatic line breaking
+    captionpos=b, % sets the caption-position to bottom
+    commentstyle=\color{mygreen}, % comment style
+    deletekeywords={...}, % if you want to delete keywords from the given language
+    escapeinside={\%*}{*)}, % if you want to add LaTeX within your code
+    extendedchars=true, % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+    frame=single, % adds a frame around the code
+    keepspaces=true, % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+    keywordstyle=\color{blue}, % keyword style
+    % language=Octave, % the language of the code
+    morekeywords={*,...}, % if you want to add more keywords to the set
+    numbers=left, % where to put the line-numbers; possible values are (none, left, right)
+    numbersep=5pt, % how far the line-numbers are from the code
+    numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+    rulecolor=\color{black}, % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+    showspaces=false, % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+    showstringspaces=false, % underline spaces within strings only
+    showtabs=false, % show tabs within strings adding particular underscores
+    stepnumber=1, % the step between two line-numbers. If it's 1, each line will be numbered
+    stringstyle=\color{mymauve}, % string literal style
+    tabsize=2, % sets default tabsize to 2 spaces
+    title=\lstname % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\lstdefinelanguage{React}{
+    keywords={const, typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+    keywordstyle=\color{blue}\bfseries,
+    ndkeywords={class, export, boolean, throw, implements, import, this},
+    ndkeywordstyle=\color{darkgray}\bfseries,
+    identifierstyle=\color{mygreen},
+    sensitive=false,
+    comment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    commentstyle=\color{purple}\ttfamily,
+    string=[b]{"}{'}{`},
+    stringstyle=\color{red}\ttfamily,
+    morestring=[b]',
+    morestring=[b]",
+    morestring=[b]`',
+}
+
+\lstdefinelanguage{CSharp}{
+    keywords={const, typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+    keywordstyle=\color{blue}\bfseries,
+    ndkeywords={class, export, boolean, throw, implements, import, this},
+    ndkeywordstyle=\color{darkgray}\bfseries,
+    identifierstyle=\color{mygreen},
+    sensitive=false,
+    comment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    commentstyle=\color{purple}\ttfamily,
+    string=[b]{"}{'}{`},
+    stringstyle=\color{red}\ttfamily,
+    morestring=[b]',
+    morestring=[b]",
+    morestring=[b]`',
+}
+
+\lstset{
+    language=React,
+    extendedchars=true,
+    basicstyle=\footnotesize\ttfamily,
+    showstringspaces=false,
+    showspaces=false,
+    numbers=left,
+    numberstyle=\footnotesize,
+    numbersep=9pt,
+    tabsize=2,
+    breaklines=true,
+    showtabs=false,
+    captionpos=b
+}
+
+\lstset{
+    language=CSharp,
+    extendedchars=true,
+    basicstyle=\footnotesize\ttfamily,
+    showstringspaces=false,
+    showspaces=false,
+    numbers=left,
+    numberstyle=\footnotesize,
+    numbersep=9pt,
+    tabsize=2,
+    breaklines=true,
+    showtabs=false,
+    captionpos=b
+}
 
 % \usepackage{cite} % Add this line for citation
 
@@ -24,30 +128,22 @@ development with the relevant back-end support develop.}
 \pagebreak
 
 \section{Introduction}
-
     \subsection{The project type}
     \input{sections/introduction/background}
-
     \subsection{About the company}
     \input{sections/introduction/aboutCompany}
-
     \subsection{About the project}
     \input{sections/introduction/aboutProject}
-
 \pagebreak
 
 \section{Problem Statement}
-    
         \subsection{Statement}
         \input{sections/problemStatement/statement}
-    
         \subsection{Situation}
         \input{sections/problemStatement/situation}
-    
         \subsection{Potential Solution}
         \input{sections/problemStatement/potentialSolution}
-
-        \pagebreak
+\pagebreak
 
 \section{Requirement Analysis}
 \input{sections/requirementAnalysis/index}
@@ -63,53 +159,43 @@ development with the relevant back-end support develop.}
     
         \subsection{Goals}
         \input{sections/requirementAnalysis/goals}
-
-        \pagebreak
+\pagebreak
 
 \section{Software Design}
-
     \subsection{Software Development Methods}
     \input{sections/softwareDevelopmentMethods/index}
-
         \subsubsection{Agile Software Development}
         \input{sections/softwareDevelopmentMethods/agileSoftwareDevelopment/index}
-
         \subsubsection{Feature Driven Development}
-        \input{sections/softwareDevelopmentMethods/featureDrivenDevelopment/index}
-
+        \input{sections/softwareDevelopmentMethods/featureDrivenDevelopment/index}        
+        \pagebreak
     \subsection{Technology selection}
     \input{sections/softwareDesign/technologySelection/index}
-
             \subsubsection{Front-end}
-            \input{sections/softwareDesign/technologySelection/frontEnd}
-            
+            \input{sections/softwareDesign/technologySelection/frontEnd}            
             \subsubsection{Back-end}
-            \input{sections/softwareDesign/technologySelection/backEnd}
-            
+            \input{sections/softwareDesign/technologySelection/backEnd}            
             \subsubsection{Database}
             \input{sections/softwareDesign/technologySelection/database}
-            
             \subsubsection{Data communication}
-            \input{sections/softwareDesign/technologySelection/dataCommunication}
-            
+            \input{sections/softwareDesign/technologySelection/dataCommunication}            
             \subsubsection{DevOps}
             \input{sections/softwareDesign/technologySelection/devOps}
-
+            \pagebreak
     \subsection{Architecture design} % here should be rewrite later
     \input{sections/softwareDesign/architectureDesign/index}
-
+    \pagebreak
         \subsubsection{Front-end}
         \input{sections/softwareDesign/architectureDesign/frontEndArchitecture}
-
+        \pagebreak
         \subsubsection{Back-end}
         \input{sections/softwareDesign/architectureDesign/backEndArchitecture}
-
+        \pagebreak
         \subsubsection{Data communication and storage}
         \input{sections/softwareDesign/architectureDesign/dataCommunicationArchitecture}
-
-    \subsection{Domain model}
-    \input{sections/softwareDesign/domainModel/index}
-
+        \pagebreak
+    % \subsection{Domain model}
+    % \input{sections/softwareDesign/domainModel/index}
     % \subsection{Database design}
     % % 数据库领域模型 ER 图
     % % 包括表和字段的设置.
@@ -130,64 +216,36 @@ development with the relevant back-end support develop.}
     \subsection{DevOps CI/CD process design}
     \input{sections/softwareDesign/devOpsDesign/index}
         \subsubsection{Continuous Integration}
-        % 持续集成
-        % 详细的介绍持续集成, 包括持续集成的工具, 持续集成的流程, 持续集成的部署.
-
+        \input{sections/softwareDesign/devOpsDesign/continuousIntegration/index}
         \subsubsection{Continuous Delivery}
-        % 持续交付
-        % 详细的介绍持续交付, 包括持续交付的工具, 持续交付的流程, 持续交付的部署.
-
+        \input{sections/softwareDesign/devOpsDesign/continuousDelivery/index}
         \subsubsection{Continuous Deployment}
-        % 持续部署
-        % 详细的介绍持续部署, 包括持续部署的工具, 持续部署的流程, 持续部署的部署.
-
+        \input{sections/softwareDesign/devOpsDesign/continuousDeployment/index}
 \pagebreak
 
 \section{Software Development} 
-
-    \subsection{Front-end}
-    % 前端开发
-    % 详细的介绍前端的开发, 包括前端的开发环境, 前端的开发工具, 前端的开发语言, 前端的开发框架, 前端的开发流程, 前端的开发测试, 前端的开发部署.
-
-    \subsection{Back-end}
-    % 后端开发
-    % 详细的介绍后端的开发, 包括后端的开发环境, 后端的开发工具, 后端的开发语言, 后端的开发框架, 后端的开发流程, 后端的开发测试, 后端的开发部署.
-
-    \subsection{Database}
-
-    \subsection{WebRTC}
-
-    \subsection{MQTT}
-
-    \subsection{RESTful API}
-
-    \subsection{Authentication}
-
+\input{sections/softwareDevelopment/index}
+    \subsection{Overall development}
+    \input{sections/softwareDevelopment/overallDevelopement/index}
+        \subsubsection{Front-end}
+        \input{sections/softwareDevelopment/overallDevelopement/frontEnd/index}
+        \subsubsection{Back-end}
+        \input{sections/softwareDevelopment/overallDevelopement/backEnd/index}
+        \subsubsection{DevOps}
+        \input{sections/softwareDevelopment/overallDevelopement/devOps/index}
+    \subsection{Feature development} 
+        \subsubsection{Use Case 1}
+        \subsubsection{Feature 1}
+        \subsubsection{Feature 2}    
 \pagebreak
-
 \section{Conclusion} 
-
     \subsection{Result}
-    % 项目的结果
-    % 项目的结果是什么, 项目的结果是否达到了预期的目标, 项目的结果是否达到了预期的效果, 项目的结果是否达到了预期的质量.
-
     \subsection{Discussion}
-    % 项目的讨论
-    % 项目的讨论是什么, 项目的讨论是对于项目的结果的讨论, 项目的讨论是对于项目的结果的分析, 项目的讨论是对于项目的结果的评价.
-
     \subsection{Future Work}
-    % 项目的未来工作
-    % 项目的未来工作是什么, 项目的未来工作是对于项目的结果的未来工作, 项目的未来工作是对于项目的结果的未来工作的分析, 项目的未来工作是对于项目的结果的未来工作的评价.
-
-
 \pagebreak
-
 % \bibliography{bibliography}
-
 \pagebreak
-
 % \begin{appendices}
 %     \section{Appendix}
 % \end{appendices} 
-
 \end{document}

@@ -1,0 +1,51 @@
+\begin{figure}[htbp]
+    \begin{lstlisting}[language=React]
+        import { createSlice } from "@reduxjs/toolkit";
+        import { getDeviceList } from "../../api/device";
+
+        const initialState = {
+            deviceList: [],
+            deviceListLoading: false,
+            deviceListError: null,
+        };
+
+        const deviceSlice = createSlice({
+            name: "deviceSlice",
+            initialState,
+            reducers: {
+                getDeviceListStart(state) {
+                    state.deviceListLoading = true;
+                    state.deviceListError = null;
+                },
+                getDeviceListSuccess(state, action) {
+                    state.deviceListLoading = false;
+                    state.deviceList = action.payload;
+                },
+                getDeviceListFailure(state, action) {
+                    state.deviceListLoading = false;
+                    state.deviceListError = action.payload;
+                },
+            },
+        });
+
+        export const {
+            getDeviceListStart,
+            getDeviceListSuccess,
+            getDeviceListFailure,
+        } = deviceSlice.actions;
+
+        export const fetchDeviceList = () => async (dispatch) => {
+            try {
+                dispatch(getDeviceListStart());
+                const deviceList = await getDeviceList();
+                dispatch(getDeviceListSuccess(deviceList));
+            } catch (error) {
+                dispatch(getDeviceListFailure(error));
+            }
+        };
+
+        export default deviceSlice.reducer;
+    \end{lstlisting}
+    \caption{The deviceSlice}
+    \label{fig:deviceSlice}
+\end{figure}

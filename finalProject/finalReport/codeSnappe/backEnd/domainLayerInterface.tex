@@ -1,0 +1,14 @@
+\begin{figure}[h]
+    \begin{lstlisting}[language=CSharp]
+        public interface IDeviceService
+        {
+            List<Device> GetDeviceList();
+            Device GetDeviceById(int id);
+            Device CreateDevice(Device device);
+            Device UpdateDevice(Device device);
+            Device DeleteDevice(int id);
+        }
+    \end{lstlisting}
+    \caption{Domain Layer Interface}
+    \label{fig:domainLayerInterface}
+\end{figure}

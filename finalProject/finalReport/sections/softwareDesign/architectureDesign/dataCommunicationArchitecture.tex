@@ -37,23 +37,3 @@ Since cross-component states are managed by Redux, this design of state objects 
 The back-end uses the dotnet framework, so the design of data structures for the back-end adopts a class-based approach.
 Object-oriented programming principles are used to encapsulate data, making data transmission more secure, ordered, and complete.
 
-\begin{tikzpicture}[node distance=2cm, every node/.style={font=\sffamily}]
-
-% Nodes
-\node (frontend) [rectangle, draw, text width=3cm, align=center] {Front-end};
-\node (backend) [rectangle, draw, text width=3cm, align=center, right of=frontend] {Back-end};
-\node (http) [ellipse, draw, below of=frontend] {HTTP};
-\node (webrtc) [ellipse, draw, below of=http] {WebRTC};
-\node (mqtt) [ellipse, draw, below of=webrtc] {MQTT};
-\node (sqlite) [rectangle, draw, text width=3cm, align=center, right of=backend] {SQLite};
-
-% Arrows
-\draw [->] (frontend) -- (http);
-\draw [->] (http) -- node[midway, right] {CRUD Requests} (backend);
-\draw [->] (frontend) -- (webrtc);
-\draw [->] (webrtc) -- node[midway, right] {Streaming Media Data} (backend);
-\draw [->] (frontend) -- (mqtt);
-\draw [->] (mqtt) -- node[midway, right] {Device Status \& Operation Info} (backend);
-\draw [->] (backend) -- (sqlite);
-
-\end{tikzpicture}

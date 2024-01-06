@@ -1,0 +1,29 @@
+\begin{figure}[htbp]
+    \begin{lstlisting}[language=React]
+        const deviceComponent = () => {
+            const {
+                data: deviceData, 
+                loading: deviceLoading, 
+                error: deviceError,
+                getDeviceList
+                } = useGetDevicelist();
+            
+            useEffect(() => {
+                getDeviceList();
+            }, []);
+
+            return (
+                <>
+                    {deviceError && 
+                        <div>Failed to load device list</div>}
+                    {deviceLoading && 
+                        <div>Loading...</div>}
+                    {!deviceLoading && !deviceError && 
+                        <TableComponent data={deviceData} />}
+                </>
+            )
+        }
+    \end{lstlisting}
+    \caption{The device component of the application}
+    \label{fig:deviceComponent}
+\end{figure}
