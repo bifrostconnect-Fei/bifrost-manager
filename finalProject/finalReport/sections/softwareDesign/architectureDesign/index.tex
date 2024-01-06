@@ -1,0 +1,61 @@
+% Overall Architecture Design
+
+The overall architecture design outlines the comprehensive structure of the system. 
+The primary objective of this design is to ensure the system's functionality, 
+reliability, scalability, and maintainability.
+
+In this project, the architecture design is based on the Client/Server (C/S) model, 
+with an additional module incorporated for facilitating remote communication.
+
+The client-side of the application is a web browser, serving as the primary interface 
+for user interaction. User operations include data requests, information display, 
+data modification, device configuration, and the creation 
+and management of classic remote access and tunnels.
+
+The server-side of the application is responsible for processing client requests, 
+executing database operations (such as Create, Read, Update, and Delete operations) 
+based on the request content, and returning the results to the client.
+
+The additional module in the back-end for remote communication is designed to implement 
+the functionality of remote communication, ensuring its reliability, scalability, 
+and maintainability. In this context, the MQTT protocol is employed, 
+with the open-source Mosquitto serving as the MQTT server 
+and the open-source Paho as the MQTT client. WebRTC, an open-source technology, 
+is utilized for remote communication.
+
+The system utilizes a Relational Database Management System (RDBMS), s
+pecifically SQLite, for data management.
+
+In the C/S architecture, the RESTful API serves as the interface definition, 
+JSON is used as the data transmission format, 
+and HTTP is used as the data transmission protocol.
+Between the front-end with the MQTT broker and webRTC server, the FlatBuffers protocol
+will be implement into this data transmissiones. 
+
+And there are an end point which is the device will also create a connection together
+with the Front-end and Back-end.
+
+\begin{figure}
+\centering
+
+\begin{tikzpicture}[node distance=3.5cm, every node/.style={align=center, minimum width=3cm, minimum height=3cm}]
+    % Nodes
+    \node (client) [rectangle, draw] {Client\\(Web Browser)};
+    \node (server) [rectangle, draw, right of=client] {Server};
+    \node (mqtt) [rectangle, draw, below of=server] {MQTT Server};
+    \node (database) [rectangle, draw, below of=mqtt] {Database\\(SQLite)};
+    
+    % Arrows
+    \draw[->] (client) -- (server);
+    \draw[->] (server) -- (mqtt);
+    \draw[->] (mqtt) -- (database);
+    
+    % Additional module
+    \node (module) [rectangle, draw, right of=server, xshift=2cm] {Additional Module\\(Remote Communication)};
+    \draw[->] (server) -- (module);
+    \draw[->] (module) -- (mqtt);
+
+\end{tikzpicture}
+\caption{System Architecture Diagram}
+\label{fig:architecture}
+\end{figure}

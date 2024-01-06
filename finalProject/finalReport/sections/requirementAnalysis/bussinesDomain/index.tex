@@ -1,0 +1,94 @@
+% As we already discrbed about the bussines target and requirement 
+% about this project. We can identify the bussines domain model as following
+% entitis:
+
+% \paragraph{Organization}
+% The organization have all the users and devices, which can set up the users and devices as a group.
+% Therefore the organization have the following attributes:
+% \begin{itemize}
+%     \item name: The name of the organization.
+%     \item users: which will be a list of users.
+%     \item devices: which will be a list of devices.
+%     \item groups: which will be a list of groups.
+% \end{itemize}
+
+% \paragraph{User}
+% The user can be the technitian or the oprator who is using the device to connect
+% to the remote equipment. The user will be the end point which will start all of the process and end of the process as well.
+% The user have the following attributes:
+% \begin{itemize}
+%     \item username: which will identify the user.
+% \end{itemize}
+
+% \paragraph{Device}
+% The device is the hardware which will be connected to the remote equipment to allowed the user to control the remote equipment.
+% The device have the following attributes:
+% \begin{itemize}
+%     \item name: which will identity the device.
+% \end{itemize}
+    
+% \paragraph{Group}
+% The group is the collection of the users and devices, which will be set up by the organization. 
+% Only the user and the device belong to the same group, the user can oprate the device, and only both the devices in the same group.
+% The user can create the tunnel between the devices in the same group.
+% The group have the following attributes:
+% \begin{itemize}
+%     \item name: which will identity the group.
+%     \item users: which will be a list of users.
+%     \item devices: which will be a list of devices.
+% \end{itemize}
+
+% This section provides an analysis of the business domain model.
+% Based on the project requirements, the following entities can be identified in the business domain model:
+
+% User: Represents both regular users and administrator users.
+% Device: Categorized into "attend device" and "non-attend device".
+% Organization: Contains groups and is the owner of all devices and users.
+% Group: Belongs to an organization and includes a list of users and devices.
+
+% The logic of this section is as follows:
+% First, we analyze the business domain model and then abstract it into an object domain model.
+% The object domain model serves as the foundation for the entire project's domain model.
+% Based on this, we can design the database model by defining tables as entities and table columns as attributes of the model.
+% Additionally, we specify relationships between tables, define primary and foreign keys, and obtain the database model.
+% Furthermore, we can design the domain model for backend objects, which serves as the foundation for backend objects.
+
+Following the identified stakeholders, we can now analyze the business domain model.
+Based on the project requirements, 
+the following entities can be identified in the business domain model:
+
+\paragraph{Organization}
+The organization has all the users and devices and can group them together.
+The organization has the following attributes:
+\begin{itemize}
+    \item name: The name of the organization.
+    \item users: A list of users.
+    \item devices: A list of devices.
+    \item groups: A list of groups.
+\end{itemize}
+
+\paragraph{User}
+The user can be a technician or an operator who uses the device to connect to remote equipment.
+The user is the starting and ending point of all processes.
+The user has the following attributes:
+\begin{itemize}
+    \item username: The identifier of the user.
+\end{itemize}
+
+\paragraph{Device}
+The device is the hardware that connects to remote equipment, allowing the user to control it.
+The device has the following attributes:
+\begin{itemize}
+    \item name: The identifier of the device.
+\end{itemize}
+    
+\paragraph{Group}
+The group is a collection of users and devices created by the organization.
+Only users and devices belonging to the same group can interact with each other.
+Users can create tunnels between devices in the same group.
+The group has the following attributes:
+\begin{itemize}
+    \item name: The identifier of the group.
+    \item users: A list of users.
+    \item devices: A list of devices.
+\end{itemize}

@@ -1,27 +1,64 @@
-% 后端架构设计
-% 后端使用的是 dotNet 框架.
-% 在 dotNet 框架中, 使用 C\# 语言进行开发. 采用了洋葱架构,
-% 洋葱架构是一种典型的分层架构, 每一层都依赖于内层, 内层向外层提供接口, 
-% 外层根据内层的接口, 向更外层和同一层的其他模块提供服务.
-%
-% 从内到外分别是: Domain, Application, Infrastructure, Presentation.
-% 其中 Domain 层是核心层, 也是最内层, 用于定义领域模型, 也就是业务模型.
-%   其中包括了领域模型, 领域服务接口
-%   领域模型是用于定义业务模型的, 也就是实体关系模型中的实体以及它们的属性.
-%   领域服务接口是用于定义业务服务的, 也就是实体关系模型中的实体之间的关系.
-%       
-% Application 层是应用层, 用于定义应用服务, 也就是业务逻辑.
-%   其中包括了领域服务实现和应用服务接口.
-%   领域服务实现实现了内层领域服务接口的方法, 实现了领域模型的业务逻辑.
-%   应用服务接口是用于定义应用服务的, 也就是业务逻辑. 
-%   其中包括但不限于数据库接口, 测试接口, httpApi接口, mqtt接口等.
-%   
-% Infrastructure 层是基础设施层, 用于定义基础设施
-%   其中包括了数据库实现, 测试实现, httpApi实现, mqtt实现等.
-%   数据库实现实现了数据库接口, 实现了数据库的增删改查服务.
-%   测试实现实现了测试接口, 实现了单元测试和集成测试的相关服务.
-%   httpApi实现实现了httpApi接口, 实现了httpApi的增删改查.
-%   mqtt实现实现了mqtt接口, 实现了mqtt的增删改查.
-%
-% Presentation 层是展示层, 用于定义展示逻辑, 也就是接口, 页面等. 由于这里是后端项目, 
-% 数据的展示和控制是由前端完成的, 所以这一层是不需要的.
+The backend uses the dotNet framework.
+In the dotNet framework, development is done using the C\# language. 
+The Onion Architecture is adopted,
+The Onion Architecture is a typical layered architecture, 
+where each layer depends on the inner layer and provides interfaces to the outer layer.
+The outer layer provides services to the outermost layer 
+and other modules in the same layer based on the interfaces of the inner layer.
+
+From inner to outer, the layers are: Domain, Application, Infrastructure, Presentation.
+The Domain layer is the core layer and the innermost layer, used to define domain models, 
+which are the business models.
+It includes domain models and domain service interfaces.
+Domain models are used to define the business models, 
+which are the entities in the entity-relationship model and their attributes.
+Domain service interfaces are used to define the business services, 
+which are the relationships between entities in the entity-relationship model.
+
+The Application layer is the application layer, 
+used to define application services, which are the business logic.
+It includes domain service implementations and application service interfaces.
+Domain service implementations implement the methods of the inner layer's domain service 
+interfaces and implement the business logic of the domain models.
+Application service interfaces are used to define application services, 
+which are the business logic.
+It includes but is not limited to database interfaces, testing interfaces, 
+HTTP API interfaces, MQTT interfaces, etc.
+
+The Infrastructure layer is the infrastructure layer, used to define infrastructure.
+It includes database implementations, testing implementations, 
+HTTP API implementations, MQTT implementations, etc.
+Database implementations implement the database interfaces 
+and provide CRUD services for the database.
+Testing implementations implement the testing interfaces 
+and provide services for unit testing and integration testing.
+HTTP API implementations implement the HTTP API interfaces 
+and provide CRUD operations for HTTP APIs.
+MQTT implementations implement the MQTT interfaces 
+and provide CRUD operations for MQTT.
+
+The Presentation layer is the presentation layer, used to define presentation logic, 
+such as interfaces and pages. Since this is a backend project,
+data presentation and control are handled by the frontend, 
+so this layer is not needed.
+
+
+\begin{tikzpicture}[node distance=2cm, every edge/.style={draw, thick}]
+    % Layers
+    \node[rectangle, draw, minimum width=4cm, minimum height=1cm] (presentation) {Presentation};
+    \node[rectangle, draw, minimum width=4cm, minimum height=1cm, below of=presentation] (infrastructure) {Infrastructure};
+    \node[rectangle, draw, minimum width=4cm, minimum height=1cm, below of=infrastructure] (application) {Application};
+    \node[rectangle, draw, minimum width=4cm, minimum height=1cm, below of=application] (domain) {Domain};
+
+    % Dependencies
+    \draw[->] (presentation) -- (infrastructure);
+    \draw[->] (infrastructure) -- (application);
+    \draw[->] (application) -- (domain);
+
+    % Labels
+    \node[above of=presentation, yshift=-0.5cm] {Presentation Layer};
+    \node[above of=infrastructure, yshift=-0.5cm] {Infrastructure Layer};
+    \node[above of=application, yshift=-0.5cm] {Application Layer};
+    \node[above of=domain, yshift=-0.5cm] {Domain Layer};
+\end{tikzpicture}
+

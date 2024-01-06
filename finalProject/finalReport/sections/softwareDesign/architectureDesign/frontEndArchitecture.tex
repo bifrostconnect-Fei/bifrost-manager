@@ -1,16 +1,52 @@
-% 在前端的架构设计中
-% 设计的目标是基于用户的使用需求, 也就是能够直观的对数据进行增删改查的操作, 以及直观简单的创建数据通道,
-% 以及对数据通道进行管理, 以及对数据通道进行数据的可视化展示.
-% 因此, 在前端中使用了基于视图设计的 React 框架, 以及基于状态和数据流的 Redux 框架.
 
-% React 框架的结构, 根据模块化的需要, 将 web 页面分为了多个组件, 每个组件都有自己的状态和属性,
-% 组件分为了容器组件, 展示组件和功能组件, 容器组件负责管理数据和状态, 展示组件负责展示数据和状态, 功能组件负责实现功能.
+In the architecture design of the front-end,  
+the goal is to meet the user's usage requirements, 
+which includes intuitive operations for data manipulation (create, read, update, delete) 
+and simple creation of data channels,as well as managing and visualizing data channels.
 
-% 在本项目中, 根据 React 的框架结构, 使用组件化的思想,
-% 将整个项目划分为以下组件:
-% 1. 页面 pages : 负责整体页面展示的框架, 包括页面的路由功能.
-% 2. 组件 compoents: 负责页面各个组成部分, 以及它们的状态, 数据和功能.
-% 3. store: 负责整个前端项目的公共数据的管理以及更新.
-% 4. utils: 包括了整个项目公用的纯函数.
-% 5. hooks: 包括了整个项目公用的自定义 hooks. 其中包括了对数据的请求, 以及对数据的处理.
+Therefore, the front-end utilizes the React framework based on view design 
+and the Redux framework based on state and data flow.
+
+The structure of the React framework divides the web page into multiple components 
+based on modularity. Each component has its own state and properties.
+Components are categorized into container components, presentational components, 
+and functional components. 
+
+Container components manage data and state, presentational components display data 
+and state, and functional components implement specific functionalities.
+
+In this project, following the structure of the React framework and adopting a component-based approach,
+the entire project is divided into the following components:
+
+\begin{tikzpicture}[
+    file/.style={draw, rectangle, minimum width=2cm, minimum height=0.8cm},
+    folder/.style={draw, rectangle, minimum width=2cm, minimum height=0.8cm, fill=gray!20},
+    arrow/.style={->, shorten >=2pt, shorten <=2pt}
+]
+
+% Folders
+\node[folder] (src) at (0,0) {src};
+\node[folder] (components) at (-2,-1.5) {components};
+\node[folder] (pages) at (0,-1.5) {pages};
+\node[folder] (store) at (2,-1.5) {store};
+\node[folder] (utils) at (-2,-3) {utils};
+\node[folder] (hooks) at (0,-3) {hooks};
+
+% Files
+\node[file] (pageComponent) at (-2,-4.5) {pageComponent};
+\node[file] (elementComponent) at (-2,-6) {elementComponent};
+% ... add more files
+
+% Connections
+\draw[arrow] (src) -- (components);
+\draw[arrow] (src) -- (pages);
+\draw[arrow] (src) -- (store);
+\draw[arrow] (src) -- (utils);
+\draw[arrow] (src) -- (hooks);
+\draw[arrow] (components) -- (pageComponent);
+\draw[arrow] (components) -- (elementComponent);
+% ... add more connections
+
+\end{tikzpicture}
+
 

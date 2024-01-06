@@ -1,5 +1,5 @@
 \contentsline {section}{\numberline {1}Introduction}{4}{}%
-\contentsline {subsection}{\numberline {1.1}The project background}{4}{}%
+\contentsline {subsection}{\numberline {1.1}The project type}{4}{}%
 \contentsline {subsection}{\numberline {1.2}About the company}{4}{}%
 \contentsline {subsection}{\numberline {1.3}About the project}{4}{}%
 \contentsline {section}{\numberline {2}Problem Statement}{5}{}%
@@ -8,88 +8,67 @@
 \contentsline {subsection}{\numberline {2.3}Potential Solution}{5}{}%
 \contentsline {section}{\numberline {3}Requirement Analysis}{7}{}%
 \contentsline {subsection}{\numberline {3.1}Stakeholders}{7}{}%
-\contentsline {subsubsection}{\numberline {3.1.1}User}{7}{}%
-\contentsline {subsubsection}{\numberline {3.1.2}Developer}{7}{}%
-\contentsline {subsubsection}{\numberline {3.1.3}Project Owner}{7}{}%
-\contentsline {subsection}{\numberline {3.2}Scope}{7}{}%
-\contentsline {subsection}{\numberline {3.3}Goals}{8}{}%
-\contentsline {subsection}{\numberline {3.4}Bussines Domain}{8}{}%
+\contentsline {paragraph}{User}{7}{}%
+\contentsline {paragraph}{Project Owner}{7}{}%
+\contentsline {paragraph}{Developer}{7}{}%
+\contentsline {subsection}{\numberline {3.2}Bussines Domain}{8}{}%
 \contentsline {paragraph}{Organization}{8}{}%
 \contentsline {paragraph}{User}{8}{}%
 \contentsline {paragraph}{Device}{8}{}%
 \contentsline {paragraph}{Group}{8}{}%
-\contentsline {section}{\numberline {4}Software Design}{9}{}%
-\contentsline {subsection}{\numberline {4.1}Software Development Methods}{9}{}%
-\contentsline {subsubsection}{\numberline {4.1.1}Agile Software Development}{9}{}%
-\contentsline {subsubsection}{\numberline {4.1.2}Unified Process}{9}{}%
-\contentsline {subsubsection}{\numberline {4.1.3}Feature Driven Development}{9}{}%
-\contentsline {subsubsection}{\numberline {4.1.4}Develop an overall model}{9}{}%
-\contentsline {paragraph}{Front-end overall model}{10}{}%
-\contentsline {paragraph}{Back-end overall model}{10}{}%
-\contentsline {paragraph}{Database overall model}{10}{}%
-\contentsline {subsubsection}{\numberline {4.1.5}Feature list}{10}{}%
-\contentsline {subsection}{\numberline {4.2}Technology selection}{10}{}%
-\contentsline {subsubsection}{\numberline {4.2.1}Front-end}{10}{}%
-\contentsline {paragraph}{JAVASCRIPTl}{10}{}%
-\contentsline {paragraph}{React}{10}{}%
-\contentsline {paragraph}{React-Router}{10}{}%
-\contentsline {paragraph}{Redux}{11}{}%
-\contentsline {paragraph}{RTK}{11}{}%
-\contentsline {paragraph}{RTKQ}{11}{}%
-\contentsline {paragraph}{TailwindCSS}{11}{}%
-\contentsline {paragraph}{Semantic UI}{11}{}%
-\contentsline {paragraph}{Jest}{11}{}%
-\contentsline {subsubsection}{\numberline {4.2.2}Back-end}{11}{}%
-\contentsline {paragraph}{C\#}{11}{}%
-\contentsline {paragraph}{ASP.NET Core}{11}{}%
-\contentsline {paragraph}{Entity Framework Core}{11}{}%
+\contentsline {subsection}{\numberline {3.3}Scope}{8}{}%
+\contentsline {subsection}{\numberline {3.4}Goals}{9}{}%
+\contentsline {section}{\numberline {4}Software Design}{10}{}%
+\contentsline {subsection}{\numberline {4.1}Software Development Methods}{10}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}Agile Software Development}{10}{}%
+\contentsline {subsubsection}{\numberline {4.1.2}Feature Driven Development}{10}{}%
+\contentsline {subsubsection}{\numberline {4.1.3}Develop an overall model}{11}{}%
+\contentsline {subsubsection}{\numberline {4.1.4}Feature list}{11}{}%
+\contentsline {subsection}{\numberline {4.2}Technology selection}{11}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}Front-end}{11}{}%
+\contentsline {paragraph}{JAVASCRIPTl}{11}{}%
+\contentsline {paragraph}{React}{11}{}%
+\contentsline {paragraph}{React-Router}{11}{}%
+\contentsline {paragraph}{Redux}{12}{}%
+\contentsline {paragraph}{RTK}{12}{}%
+\contentsline {paragraph}{RTKQ}{12}{}%
+\contentsline {paragraph}{TailwindCSS}{12}{}%
+\contentsline {paragraph}{Semantic UI}{12}{}%
+\contentsline {paragraph}{Jest}{12}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}Back-end}{12}{}%
+\contentsline {paragraph}{CSharp}{12}{}%
+\contentsline {paragraph}{ASP.NET Core}{12}{}%
+\contentsline {paragraph}{Entity Framework}{12}{}%
 \contentsline {subsubsection}{\numberline {4.2.3}Database}{12}{}%
 \contentsline {paragraph}{SQLite}{12}{}%
-\contentsline {subsubsection}{\numberline {4.2.4}Data communication}{12}{}%
-\contentsline {paragraph}{HTTP}{12}{}%
-\contentsline {paragraph}{Flatbuffers}{12}{}%
-\contentsline {paragraph}{MQTT}{12}{}%
-\contentsline {paragraph}{webrtc}{12}{}%
-\contentsline {paragraph}{WebRTC Datachannel}{12}{}%
-\contentsline {subsubsection}{\numberline {4.2.5}DevOps}{12}{}%
-\contentsline {paragraph}{Git}{12}{}%
+\contentsline {subsubsection}{\numberline {4.2.4}Data communication}{13}{}%
+\contentsline {paragraph}{HTTP}{13}{}%
+\contentsline {paragraph}{Flatbuffers}{13}{}%
+\contentsline {paragraph}{MQTT}{13}{}%
+\contentsline {paragraph}{webrtc}{13}{}%
+\contentsline {subsubsection}{\numberline {4.2.5}DevOps}{13}{}%
+\contentsline {paragraph}{Git}{13}{}%
 \contentsline {paragraph}{GitHub}{13}{}%
 \contentsline {paragraph}{GitHub Actions}{13}{}%
-\contentsline {paragraph}{Docker}{13}{}%
-\contentsline {subsection}{\numberline {4.3}Domain model}{13}{}%
-\contentsline {subsubsection}{\numberline {4.3.1}Entities}{13}{}%
-\contentsline {paragraph}{Entities}{13}{}%
-\contentsline {subsubsection}{\numberline {4.3.2}Relations}{14}{}%
-\contentsline {subsection}{\numberline {4.4}Architecture design}{14}{}%
-\contentsline {subsubsection}{\numberline {4.4.1}overall architecture}{14}{}%
-\contentsline {subsubsection}{\numberline {4.4.2}Front-end}{15}{}%
-\contentsline {subsubsection}{\numberline {4.4.3}Back-end}{15}{}%
-\contentsline {subsubsection}{\numberline {4.4.4}Data communication and storage}{15}{}%
-\contentsline {subsection}{\numberline {4.5}Database design}{15}{}%
-\contentsline {subsubsection}{\numberline {4.5.1}Entities}{15}{}%
-\contentsline {subsubsection}{\numberline {4.5.2}Relations}{15}{}%
-\contentsline {subsection}{\numberline {4.6}Back-end design}{15}{}%
-\contentsline {subsection}{\numberline {4.7}Front-end design}{15}{}%
-\contentsline {subsubsection}{\numberline {4.7.1}Pages}{15}{}%
-\contentsline {subsubsection}{\numberline {4.7.2}Components}{15}{}%
-\contentsline {subsubsection}{\numberline {4.7.3}Services}{15}{}%
-\contentsline {subsubsection}{\numberline {4.7.4}State}{15}{}%
-\contentsline {subsection}{\numberline {4.8}FlatBuffers design}{15}{}%
-\contentsline {subsection}{\numberline {4.9}DevOps CI/CD process design}{15}{}%
-\contentsline {subsubsection}{\numberline {4.9.1}Version Control}{15}{}%
-\contentsline {subsubsection}{\numberline {4.9.2}Branching Strategy}{15}{}%
-\contentsline {subsubsection}{\numberline {4.9.3}Continuous Integration}{15}{}%
-\contentsline {subsubsection}{\numberline {4.9.4}Continuous Delivery}{15}{}%
-\contentsline {subsubsection}{\numberline {4.9.5}Continuous Deployment}{15}{}%
-\contentsline {section}{\numberline {5}Software Development}{16}{}%
-\contentsline {subsection}{\numberline {5.1}Front-end}{16}{}%
-\contentsline {subsection}{\numberline {5.2}Back-end}{16}{}%
-\contentsline {subsection}{\numberline {5.3}Database}{16}{}%
-\contentsline {subsection}{\numberline {5.4}WebRTC}{16}{}%
-\contentsline {subsection}{\numberline {5.5}MQTT}{16}{}%
-\contentsline {subsection}{\numberline {5.6}RESTful API}{16}{}%
-\contentsline {subsection}{\numberline {5.7}Authentication}{16}{}%
-\contentsline {section}{\numberline {6}Conclusion}{17}{}%
-\contentsline {subsection}{\numberline {6.1}Result}{17}{}%
-\contentsline {subsection}{\numberline {6.2}Discussion}{17}{}%
-\contentsline {subsection}{\numberline {6.3}Future Work}{17}{}%
+\contentsline {paragraph}{Docker}{14}{}%
+\contentsline {subsection}{\numberline {4.3}Architecture design}{14}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}Front-end}{14}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}Back-end}{16}{}%
+\contentsline {subsubsection}{\numberline {4.3.3}Data communication and storage}{17}{}%
+\contentsline {subsection}{\numberline {4.4}Domain model}{19}{}%
+\contentsline {subsection}{\numberline {4.5}DevOps CI/CD process design}{19}{}%
+\contentsline {subsubsection}{\numberline {4.5.1}Continuous Integration}{19}{}%
+\contentsline {subsubsection}{\numberline {4.5.2}Continuous Delivery}{19}{}%
+\contentsline {subsubsection}{\numberline {4.5.3}Continuous Deployment}{19}{}%
+\contentsline {section}{\numberline {5}Software Development}{20}{}%
+\contentsline {subsection}{\numberline {5.1}Front-end}{20}{}%
+\contentsline {subsection}{\numberline {5.2}Back-end}{20}{}%
+\contentsline {subsection}{\numberline {5.3}Database}{20}{}%
+\contentsline {subsection}{\numberline {5.4}WebRTC}{20}{}%
+\contentsline {subsection}{\numberline {5.5}MQTT}{20}{}%
+\contentsline {subsection}{\numberline {5.6}RESTful API}{20}{}%
+\contentsline {subsection}{\numberline {5.7}Authentication}{20}{}%
+\contentsline {section}{\numberline {6}Conclusion}{21}{}%
+\contentsline {subsection}{\numberline {6.1}Result}{21}{}%
+\contentsline {subsection}{\numberline {6.2}Discussion}{21}{}%
+\contentsline {subsection}{\numberline {6.3}Future Work}{21}{}%

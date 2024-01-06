@@ -2,9 +2,12 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{tikz}
-\usepackage{cite} % Add this line for citation
 
-\bibliographystyle{plain}
+\usetikzlibrary{shapes,arrows}
+
+% \usepackage{cite} % Add this line for citation
+
+% \bibliographystyle{plain}
 
 \title{The implementation of Bifrostconnect Front-end scope, re-design and
 development with the relevant back-end support develop.}
@@ -47,54 +50,32 @@ development with the relevant back-end support develop.}
         \pagebreak
 
 \section{Requirement Analysis}
-    
+\input{sections/requirementAnalysis/index}
+
         \subsection{Stakeholders}
         \input{sections/requirementAnalysis/stakeholders/index}
 
-            \subsubsection{User}
-            \input{sections/requirementAnalysis/stakeholders/user}
-            
-            \subsubsection{Developer}
-            \input{sections/requirementAnalysis/stakeholders/developer}
-            
-            \subsubsection{Project Owner}
-            \input{sections/requirementAnalysis/stakeholders/projectOwner}
-    
+        \subsection{Bussines Domain}
+        \input{sections/requirementAnalysis/bussinesDomain/index}
+
         \subsection{Scope}
         \input{sections/requirementAnalysis/scope}
     
         \subsection{Goals}
         \input{sections/requirementAnalysis/goals}
 
-        \subsection{Bussines Domain}
-        \input{sections/requirementAnalysis/bussinesDomain}
-
         \pagebreak
 
 \section{Software Design}
 
     \subsection{Software Development Methods}
-    % 项目的方法论
-    % 项目的方法论是指在项目管理和实施过程中所采用的一套系统化的方法和原则。
-    % 它包括项目的规划、组织、实施、监控和收尾等各个阶段的具体步骤和方法。
-    % 项目的方法论可以帮助项目团队有效地管理和控制项目，确保项目按时、按质、按成本完成，
-    % 并达到预期的目标和利益。常见的项目方法论包括敏捷开发、瀑布模型、迭代开发等。
-    % 选择适合的项目方法论对于项目的成功至关重要。
+    \input{sections/softwareDevelopmentMethods/index}
 
         \subsubsection{Agile Software Development}
-        \input{sections/softwareDevelopmentMethods/agileSoftwareDevelopment}
-
-        \subsubsection{Unified Process}
-        \input{sections/softwareDevelopmentMethods/unifiedProcess}
+        \input{sections/softwareDevelopmentMethods/agileSoftwareDevelopment/index}
 
         \subsubsection{Feature Driven Development}
         \input{sections/softwareDevelopmentMethods/featureDrivenDevelopment/index}
-
-        \subsubsection{Develop an overall model}
-        \input{sections/softwareDevelopmentMethods/featureDrivenDevelopment/developAnOverallModel}
-        
-        \subsubsection{Feature list}
-        \input{sections/softwareDevelopmentMethods/featureDrivenDevelopment/featureList/index}
 
     \subsection{Technology selection}
     \input{sections/softwareDesign/technologySelection/index}
@@ -114,14 +95,8 @@ development with the relevant back-end support develop.}
             \subsubsection{DevOps}
             \input{sections/softwareDesign/technologySelection/devOps}
 
-    \subsection{Architecture design}
-
-        % 架构设计
-        % 详细的介绍项目的架构设计, 包括前端的架构设计, 后端的架构设计, 以及前后端的交互设计.
-        % 也包括相关的中间件, 通信的协议和架构, 以及相关的数据库设计.
-        
-        \subsubsection{overall architecture}
-        \input{sections/softwareDesign/architectureDesign/overallArchitecture}
+    \subsection{Architecture design} % here should be rewrite later
+    \input{sections/softwareDesign/architectureDesign/index}
 
         \subsubsection{Front-end}
         \input{sections/softwareDesign/architectureDesign/frontEndArchitecture}
@@ -135,33 +110,25 @@ development with the relevant back-end support develop.}
     \subsection{Domain model}
     \input{sections/softwareDesign/domainModel/index}
 
-    \subsection{Database design}
-    % 数据库领域模型 ER 图
-    % 包括表和字段的设置.
-    % 对于私有键和外键的设置.
+    % \subsection{Database design}
+    % % 数据库领域模型 ER 图
+    % % 包括表和字段的设置.
+    % % 对于私有键和外键的设置.
 
-    \subsection{Back-end design}
-    % 后端对象模型
-    % 以及对于对象模型的增删改查
-    % 以及相关的其他服务的设计`'
+    % \subsection{Back-end design}
+    % % 后端对象模型
+    % % 以及对于对象模型的增删改查
+    % % 以及相关的其他服务的设计`'
 
-    \subsection{Front-end design}
-    % 对于前端的页面结构的设计 
-    % 页面的状态的设计, 交互设计
+    % \subsection{Front-end design}
+    % % 对于前端的页面结构的设计 
+    % % 页面的状态的设计, 交互设计
 
-    \subsection{FlatBuffers design}
-    % schema 的设计
+    % \subsection{FlatBuffers design}
+    % % schema 的设计
 
-    \subsection{DevOps CI/CD process design} % #page6
-
-        \subsubsection{Version Control}
-        % 版本控制
-        % 详细的介绍版本控制, 包括版本控制的工具, 版本控制的流程, 版本控制的部署.
-
-        \subsubsection{Branching Strategy}
-        % 分支策略
-        % 详细的介绍分支策略, 包括分支策略的工具, 分支策略的流程, 分支策略的部署.
-
+    \subsection{DevOps CI/CD process design}
+    \input{sections/softwareDesign/devOpsDesign/index}
         \subsubsection{Continuous Integration}
         % 持续集成
         % 详细的介绍持续集成, 包括持续集成的工具, 持续集成的流程, 持续集成的部署.
@@ -215,7 +182,7 @@ development with the relevant back-end support develop.}
 
 \pagebreak
 
-\bibliography{bibliography}
+% \bibliography{bibliography}
 
 \pagebreak
 

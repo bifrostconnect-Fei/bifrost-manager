@@ -1,11 +1,33 @@
-"Feature Driven Development (FDD) is an iterative and incremental software development process." \cite{fdd}
+Feature Driven Development (FDD) 
+is an iterative and incremental software development process.
 
-    The FDD is a model-driven short-iteration process that consists of five basic activities:
-    
-    \begin{enumerate}
-        \item Develop an overall model
-        \item Build a feature list
-        \item Plan by feature
-        \item Design by feature
-        \item Build by feature
-    \end{enumerate}
+The FDD is a model-driven short-iteration process 
+that consists of five basic activities:
+
+\begin{enumerate}
+    \item Develop an overall model
+    \item Build a feature list
+    \item Plan by feature
+    \item Design by feature
+    \item Build by feature
+\end{enumerate}
+
+\subsubsection{Develop an overall model}
+The first step of the FDD is to develop an overall model. 
+The overall model is a domain model that preposed to let the application
+can have a basic structure and can be run for no feature.
+After the overall model is developed, 
+the feature list can be created for adding the features to the application.
+
+In this project, because the main focus of this project is to migrate
+the interfaces into the exist application, the overall model will be only 
+fouce on the UI, state management, and constructure of interface
+in the Device Manager.
+
+\subsubsection{Feature list}
+The feature list is a list of the features that the application will have.
+It will following the use-case that be indentify in the user story. 
+And connect the all front-end, back-end and database together.
+Therefore, the each feature will produce the sequence start 
+from the front-end to the back-end and then to the database, 
+and return the result to the front-end to display to the user.
