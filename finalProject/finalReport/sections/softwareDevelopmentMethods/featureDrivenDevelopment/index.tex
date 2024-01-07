@@ -1,8 +1,5 @@
-Feature Driven Development (FDD) 
-is an iterative and incremental software development process.
-
-The FDD is a model-driven short-iteration process 
-that consists of five basic activities:
+Feature Driven Development (FDD) is an iterative and incremental software development process.
+It is a model-driven short-iteration process that consists of five basic activities:
 
 \begin{enumerate}
     \item Develop an overall model
@@ -12,22 +9,31 @@ that consists of five basic activities:
     \item Build by feature
 \end{enumerate}
 
-\subsubsection{Develop an overall model}
+The FDD based on the feature underlying principles. At the beginning, 
+it cost less time to develop a temporary system to contain a basic structure 
+and can be run for no feature.
+
+Then, the features will be design and develop into the system one by one.
+Each feature will be developed in a short iteration, which will be contained
+the design, the development, and the testing.
+
+\paragraph{Develop an overall model}
 The first step of the FDD is to develop an overall model. 
-The overall model is a domain model that preposed to let the application
+The overall model is a domain model that proposed to let the application
 can have a basic structure and can be run for no feature.
 After the overall model is developed, 
 the feature list can be created for adding the features to the application.
 
 In this project, because the main focus of this project is to migrate
 the interfaces into the exist application, the overall model will be only 
-fouce on the UI, state management, and constructure of interface
+force on the UI, state management, and constructure of interface
 in the Device Manager.
 
-\subsubsection{Feature list}
+\paragraph{Feature list}
 The feature list is a list of the features that the application will have.
-It will following the use-case that be indentify in the user story. 
+It will follow the use-case that be identified in the user story. 
 And connect the all front-end, back-end and database together.
-Therefore, the each feature will produce the sequence start 
-from the front-end to the back-end and then to the database, 
+
+Therefore, each feature will produce the sequence start 
+from the front-end to the back-end and then to the database and the device,
 and return the result to the front-end to display to the user.

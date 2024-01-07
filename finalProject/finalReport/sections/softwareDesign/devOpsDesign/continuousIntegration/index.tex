@@ -1,18 +1,18 @@
 The continuous integration is the practice of merging the code from each of develop process 
 into a source control repository to integrate and test the code.
 
-The propose for continuous integration is to quickly check the code is working for different part
+The proposal for continuous integration is to quickly check the code is working for different part
 of the project together which means integration.
 
-For this project, each of the feature will be develop in sepriate branch and should be merge into
+For this project, each of the feature will be developed in separate branch and should be merged into
 the master branch and test as a whole project.
 
-Therefore when the feature is developed, the developer should push the code to the remote repository, 
+Therefore, when the feature is developed, the developer should push the code to the remote repository, 
 and create a pull request to merge the code into the master branch.
 
 \paragraph{Pull Request}
 
-When the developer push the code to the remote repository, the pull request will be created automatically.
+When the developer pushes the code to the remote repository, the pull request will be created automatically.
 
 The pull request will trigger the continuous integration process, which will build the project and run the test cases.
 If the test cases are passed, the pull request will be approved and the code will be merged into the master branch.
@@ -22,15 +22,15 @@ The continuous integration process will be implemented by the GitHub Actions.
 Start from the checkout the code from the remote repository, 
 the GitHub Actions will build the project.
 
-For the front-end project, automatically the GitHub Actions will setup the Node.js environment,
-install the dependencies, and build the project using the npm command.
+For the front-end project, automatically the GitHub Actions will set up the Node.js environment,
+install the dependencies, and build the project using the NPM command.
 
 After build the project, the GitHub Actions will 
 
 \paragraph{Continuous Testing}
 
-The continuous testing is the practice of running automated test cases by using the npm command in the GitHub Actions.
+The continuous testing is the practice of running automated test cases by using the   NPM command in the GitHub Actions.
 
-That will leading the npm to run the unit test cases and then generate the test coverage report.
+That will lead the NPM to run the unit test cases and then generate the test coverage report.
 
 After the unit test, the GitHub Actions will run the end-to-end test cases by using the E2E testing framework.

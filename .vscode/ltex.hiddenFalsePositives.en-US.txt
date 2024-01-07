@@ -1,0 +1,9 @@
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgroups: A list of groups.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qusers: A list of users.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qdevices: A list of devices.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qname: The name of the organization.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qusers: A collection of users.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qdevices: A collection of devices.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qrole: The role of the user, can be normal user or admin.\\E$"}
+{"rule":"MD_BE_NON_VBP","sentence":"^\\Qtype: The type of the device, can be Attend Unit or Unattended Unit.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qtype: The type of the device, can be Attend Unit or Unattended Unit.\\E$"}

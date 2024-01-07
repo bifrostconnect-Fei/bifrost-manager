@@ -1,5 +1,5 @@
-The front overall developement will create the basic front-end for the project.
-For develop the front-end, we need to create the following components:
+The front overall development will create the basic front-end for the project.
+For developing the front-end, we need to create the following components:
 \begin{itemize}
     \item pages
     \item components
@@ -21,11 +21,11 @@ See the figure \ref{fig:devicePage} for the device page example.
 The components are the reusable elements in the application.
 Which included two types of components: 
 \begin{itemize}
-    \item page components: the reusable page componets included multiple element components. 
+    \item page components: the reusable page components included multiple element components. 
     Such as the user component, the device component, the group component, etc.
     \item element components: the reusable basic elements.
     Such as the button, the input, the select, etc.
-    \item spicific components: the components reusable with the spicific usage.
+    \item specific components: the components reusable with the specific usage.
     Such as the session component, the data channel component, etc.
 \end{itemize}
 
@@ -38,7 +38,7 @@ See the figure \ref{fig:tableComponent} for the table component example.
 
 \paragraph{Hooks}
 The hooks are the reusable functions in the application which used the React customize hooks.
-The hooks should be the pure functions. And should oprate its own scope and state.
+The hooks should be the pure functions. And should operate its own scope and state.
 The hook can be invoked in any of the components. 
 See the figure \ref{fig:useGetDeviceList} for the useGetDeviceList hook example.
 
@@ -47,7 +47,7 @@ See the figure \ref{fig:useGetDeviceList} for the useGetDeviceList hook example.
 \paragraph{Store}
 The store is the global state of the application. 
 In this project we use the Redux to manage the global state.
-Instead using the original Redux, we use the Redux Toolkit to simplify the Redux developement.
+Instead, using the original Redux, we use the Redux Toolkit to simplify the Redux development.
 
 Therefore, the store's \texttt{index.js} file is the Redux Toolkit store 
 which used for combine the reducers and the middlewares. 

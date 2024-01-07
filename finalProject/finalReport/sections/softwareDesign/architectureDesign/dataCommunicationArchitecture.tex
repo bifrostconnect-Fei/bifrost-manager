@@ -1,39 +1,60 @@
-% Design of data communication and data storage for this project, 
-% including the selection of communication protocols and the design of data storage.
 Design of data communication:
-1. Selection of communication protocols
+
+\paragraph{Selection of communication protocols}
+
 There are three types of data transmitted from the front-end to the back-end: 
-- Requests for basic CRUD operations, which have low requirements for timeliness but require accuracy, integrity, order, and security. 
-For this type of data transmission, the HTTP protocol and RESTful API design are used to effectively meet the above requirements.
-- Creation of data channels and transmission of streaming media data, which require high timeliness and security. 
-For this type of data transmission, the WebRTC protocol and MQTT protocol are used, along with the fast-decoding flatbuffers protocol, to effectively meet the above requirements.
-- Transmission of device status information and operation information, which require high integrity, order, and security. 
-For this type of data transmission, the MQTT protocol is used along with the flatbuffers protocol.
+\begin{itemize}
+    \item Requests for basic CRUD operations, which have low requirements for timeliness but require accuracy, integrity, order, and security. 
+    For this type of data transmission, the HTTP protocol and RESTful API design are used to effectively meet the above requirements.
+    \item Creation of data channels and transmission of streaming media data, which require high timeliness and security. 
+    For this type of data transmission, the WebRTC protocol and MQTT protocol are used, along with the fast-decoding FlatBuffer protocol, 
+    to effectively meet the above requirements.
+    \item Transmission of device status information and operation information. 
+    Which require high integrity, order, and security. 
+    For this type of data transmission, the MQTT protocol is used along with the FlatBuffer protocol.
+\end{itemize}
 
-2. Communication architecture and flow of data communication
-The data communication architecture of this project is based on a front-end and back-end separation architecture, with React framework used for the front-end and dotnet framework used for the back-end.
-When the front-end needs to send data to the back-end, it sends an HTTP request to the back-end. Upon receiving the HTTP request, the back-end selects different data processing methods based on the data type of the request. 
+
+
+\paragraph{Communication architecture and flow of data communication}
+
+The data communication architecture of this project is based on a front-end and back-end separation architecture, 
+with React framework used for the front-end and dotNet framework used for the back-end.
+
+When the front-end needs to send data to the back-end, it sends an HTTP request to the back-end.
+Upon receiving the HTTP request, the back-end selects different data processing methods based on the data type of the request. 
 For basic CRUD requests, the back-end performs CRUD operations on the data based on the RESTful API design. 
-For the creation of data channels and transmission of streaming media data, the back-end creates data channels based on the WebRTC protocol and helps establish data channels between the front-end and devices. Once the data channel is established, the front-end and devices use the flatbuffer data format for streaming media data transmission.
-For the transmission of device status information and operation information, the front-end directly sends MQTT requests to the MQTT broker. The devices listen to the relevant MQTT requests in their firmware and return the corresponding data.
+For the creation of data channels and transmission of streaming media data, 
+the back-end creates data channels based on the WebRTC protocol and helps establish data channels 
+between the front-end and devices. Once the data channel is established, the front-end and devices 
+use the FlatBuffer data format for streaming media data transmission.
+For the transmission of device status information and operation information, 
+the front-end directly sends MQTT requests to the MQTT broker. 
+The devices listen to the relevant MQTT requests in their firmware and return the corresponding data.
 
-3. Data formats for data communication
+\paragraph{Data formats for data communication}
 There are three data formats for data communication in this project:
-- HTTP protocol: Data is transmitted using the JSON format.
-- WebRTC protocol: Data is transmitted using the flatbuffers format.
-- MQTT protocol: Data is transmitted using the flatbuffers format.
+\begin{itemize}
+\item HTTP protocol: Data is transmitted using the JSON format.
+\item WebRTC protocol: Data is transmitted using the FlatBuffer format.
+\item MQTT protocol: Data is transmitted using the FlatBuffer format.
+\end{itemize}
 
-Design of data storage:
-1. Selection of database for data storage
+\paragraph{Design of data storage:}
+\begin{itemize}
+\item Selection of database for data storage: 
 For data storage in this project, a lightweight database SQLite is used.
 SQLite is an in-process library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine.
-This choice is made because the purpose of the entire project is to achieve data communication between the front-end and devices. There is no high requirement for database operations such as CRUD, the data volume is small, and the transactional requirement for database data is not high. Therefore, SQLite database is chosen.
-
-2. Design of data structures for the front-end and back-end of the project
+This choice is made because the purpose of the entire project is to achieve data communication between the front-end and devices. 
+There is no high requirement for database operations such as CRUD, the data volume is small, and the transactional requirement for database data is not high. 
+Therefore, SQLite database is chosen.
+\item Design of data structures for the front-end and back-end of the project: 
 In this project, the front-end uses the React framework, so the design of data structures for the front-end adopts a state-based approach.
 Each component or data set contains a state object, and the properties of this state object represent the various states of the component.
-The use of state objects facilitates state management. By using the object-property form, it is easy to distinguish between similar states of different components.
+The use of state objects facilitates state management. By using the object-property form, 
+it is easy to distinguish between similar states of different components.
 Since cross-component states are managed by Redux, this design of state objects enables easier state updates and transfers.
-The back-end uses the dotnet framework, so the design of data structures for the back-end adopts a class-based approach.
+The back-end uses the dotNet framework, so the design of data structures for the back-end adopts a class-based approach.
 Object-oriented programming principles are used to encapsulate data, making data transmission more secure, ordered, and complete.
+\end{itemize}
 

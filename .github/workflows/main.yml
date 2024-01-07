@@ -21,8 +21,7 @@
                 uses: actions/setup-dotnet@v4.0.0
                 with:
                   dotnet-version: "6"
-              - name: back-end build
-                run: |
+              - run: |
                   cd backEnd
                   dotnet restore
                   dotnet build

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Homebrew) (preloaded format=xelatex 2023.6.22)  6 JAN 2024 23:59
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Homebrew) (preloaded format=xelatex 2023.6.22)  7 JAN 2024 20:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -379,55 +379,65 @@ File: l3backend-xetex.def 2023-01-16 L3 backend support: XeTeX
 ) (./index.aux)
 \openout1 = `index.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 122.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 122.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 127.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 127.
  (/usr/local/Cellar/texlive/20230313_2/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
 \c@lstlisting=\count301
- [1
+ (./index.toc [1
 
-] (./index.toc [2])
+])
 \tf@toc=\write4
 \openout4 = `index.toc'.
 
- [3] (./sections/introduction/background.tex) (./sections/introduction/aboutCompany.tex) (./sections/introduction/aboutProject.tex) [4] (./sections/problemStatement/statement.tex) (./sections/problemStatement/situation.tex)
-(./sections/problemStatement/potentialSolution.tex [5]) [6] (./sections/requirementAnalysis/index.tex) (./sections/requirementAnalysis/stakeholders/index.tex) (./sections/requirementAnalysis/bussinesDomain/index.tex [7]) (./sections/requirementAnalysis/scope.tex) [8] (./sections/requirementAnalysis/goals.tex) [9] (./sections/softwareDevelopmentMethods/index.tex
-Overfull \hbox (1.14pt too wide) in paragraph at lines 3--8
-\TU/lmr/m/n/10 Project methodology refers to a systematic set of methods and principles adopted
+ [2] (./sections/introduction/background.tex) (./sections/introduction/aboutCompany.tex) (./sections/introduction/aboutProject.tex) [3] (./sections/problemStatement/statement.tex) (./sections/problemStatement/situation.tex)
+(./sections/problemStatement/potentialSolution.tex) [4] (./sections/requirementAnalysis/index.tex) (./sections/requirementAnalysis/stakeholders/index.tex) (./sections/requirementAnalysis/bussinesDomain/index.tex [5] [6]) (./sections/requirementAnalysis/scope.tex) (./sections/requirementAnalysis/goals.tex) [7] (./sections/softwareDevelopmentMethods/index.tex) (./sections/softwareDevelopmentMethods/agileSoftwareDevelopment/index.tex
+Overfull \hbox (3.324pt too wide) in paragraph at lines 5--7
+\TU/lmr/m/n/10 livery, continuous improvement, encourages rapid and flexible response to change. 
  []
 
-
-Overfull \hbox (0.84799pt too wide) in paragraph at lines 9--12
-\TU/lmr/m/n/10 projects, ensuring timely, high-quality, and cost-effective completion, and achiev-
+) (./sections/softwareDevelopmentMethods/featureDrivenDevelopment/index.tex [8]) [9] (./sections/softwareDesign/technologySelection/index.tex) (./sections/softwareDesign/technologySelection/frontEnd.tex [10]) (./sections/softwareDesign/technologySelection/backEnd.tex) (./sections/softwareDesign/technologySelection/database.tex) (./sections/softwareDesign/technologySelection/dataCommunication.tex [11]) (./sections/softwareDesign/technologySelection/devOps.tex) [12] (./sections/softwareDesign/architectureDesign/index.tex) [13] (./sections/softwareDesign/architectureDesign/frontEndArchitecture.tex
+Overfull \hbox (1.3867pt too wide) in paragraph at lines 19--22
+ \TU/lmr/bx/n/10 Remote Access Interface[] \TU/lmr/m/n/10 The remote access interface needs to be redesigned
  []
 
-) (./sections/softwareDevelopmentMethods/agileSoftwareDevelopment/index.tex) (./sections/softwareDevelopmentMethods/featureDrivenDevelopment/index.tex [10]) [11] (./sections/softwareDesign/technologySelection/index.tex) (./sections/softwareDesign/technologySelection/frontEnd.tex [12]) (./sections/softwareDesign/technologySelection/backEnd.tex) (./sections/softwareDesign/technologySelection/database.tex) (./sections/softwareDesign/technologySelection/dataCommunication.tex [13]) (./sections/softwareDesign/technologySelection/devOps.tex) [14] (./sections/softwareDesign/architectureDesign/index.tex) [15] (./sections/softwareDesign/architectureDesign/frontEndArchitecture.tex [16] [17]) [18] (./sections/softwareDesign/architectureDesign/backEndArchitecture.tex) [19] (./sections/softwareDesign/architectureDesign/dataCommunicationArchitecture.tex [20]) [21] (./sections/softwareDesign/devOpsDesign/index.tex) (./sections/softwareDesign/devOpsDesign/continuousIntegration/index.tex) (./sections/softwareDesign/devOpsDesign/continuousDelivery/index.tex [22]) (./sections/softwareDesign/devOpsDesign/continuousDeployment/index.tex) [23] (./sections/softwareDevelopment/index.tex) (./sections/softwareDevelopment/overallDevelopement/index.tex) (./sections/softwareDevelopment/overallDevelopement/frontEnd/index.tex (./codeSnappe/devicePage.tex
+[14] [15]) [16] (./sections/softwareDesign/architectureDesign/backEndArchitecture.tex) [17] (./sections/softwareDesign/architectureDesign/dataCommunicationArchitecture.tex
+Overfull \hbox (8.40002pt too wide) in paragraph at lines 12--15
+[]\TU/lmr/m/n/10 Transmission of device status information and operation information. Which
+ []
+
+[18]) [19] (./sections/softwareDesign/devOpsDesign/index.tex) (./sections/softwareDesign/devOpsDesign/continuousIntegration/index.tex) (./sections/softwareDesign/devOpsDesign/continuousDelivery/index.tex [20]) (./sections/softwareDesign/devOpsDesign/continuousDeployment/index.tex) [21] (./sections/softwareDevelopment/index.tex) (./sections/softwareDevelopment/overallDevelopement/index.tex) (./sections/softwareDevelopment/overallDevelopement/frontEnd/index.tex (./codeSnappe/devicePage.tex
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <8> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 3.
-) [24] (./codeSnappe/deviceComponent.tex) (./codeSnappe/tableComponent.tex) (./codeSnappe/useGetDeviceList.tex) (./codeSnappe/deviceSlice.tex) [25] [26] [27] [28] (./codeSnappe/storeIndex.tex)) [29] [30] (./sections/softwareDevelopment/overallDevelopement/backEnd/index.tex [31] (./codeSnappe/backEnd/domainLayerEntities.tex) (./codeSnappe/backEnd/domainLayerInterface.tex) (./codeSnappe/backEnd/applicationLayerService.tex) [32] [33]) [34] (./sections/softwareDevelopment/overallDevelopement/devOps/index.tex) [35] [36] (./index.aux) ) 
+) [22] (./codeSnappe/deviceComponent.tex) (./codeSnappe/tableComponent.tex) (./codeSnappe/useGetDeviceList.tex) (./codeSnappe/deviceSlice.tex) [23] [24] [25] [26] (./codeSnappe/storeIndex.tex)) [27] [28] (./sections/softwareDevelopment/overallDevelopement/backEnd/index.tex [29] (./codeSnappe/backEnd/domainLayerEntities.tex) (./codeSnappe/backEnd/domainLayerInterface.tex) (./codeSnappe/backEnd/applicationLayerService.tex) [30] [31]
+Overfull \hbox (0.50334pt too wide) in paragraph at lines 77--79
+ \TU/lmr/bx/n/10 Dependency Injection[] \TU/lmr/m/n/10 The dependency injection is the design pattern which
+ []
+
+) [32] (./sections/softwareDevelopment/overallDevelopement/devOps/index.tex) (./sections/softwareDevelopment/featureDevelopment/index.tex) (./sections/softwareDevelopment/featureDevelopment/useCase1/index.tex) (./sections/softwareDevelopment/featureDevelopment/feature/feature1.tex [33]) [34] [35] (./index.aux) ) 
 Here is how much of TeX's memory you used:
- 16183 strings out of 476683
- 359985 string characters out of 5795667
+ 16201 strings out of 476683
+ 361069 string characters out of 5795667
  3071018 words of memory out of 5000000
- 36040 multiletter control sequences out of 15000+600000
+ 36048 multiletter control sequences out of 15000+600000
  516239 words of font info for 57 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 84i,6n,89p,728b,1209s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,11n,89p,391b,1209s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on index.pdf (36 pages).
+Output written on index.pdf (35 pages).

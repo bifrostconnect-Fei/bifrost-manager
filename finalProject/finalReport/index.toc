@@ -1,93 +1,100 @@
-\contentsline {section}{\numberline {1}Introduction}{4}{}%
-\contentsline {subsection}{\numberline {1.1}The project type}{4}{}%
-\contentsline {subsection}{\numberline {1.2}About the company}{4}{}%
-\contentsline {subsection}{\numberline {1.3}About the project}{4}{}%
-\contentsline {section}{\numberline {2}Problem Statement}{5}{}%
-\contentsline {subsection}{\numberline {2.1}Statement}{5}{}%
-\contentsline {subsection}{\numberline {2.2}Situation}{5}{}%
-\contentsline {subsection}{\numberline {2.3}Potential Solution}{5}{}%
-\contentsline {section}{\numberline {3}Requirement Analysis}{7}{}%
-\contentsline {subsection}{\numberline {3.1}Stakeholders}{7}{}%
-\contentsline {paragraph}{User}{7}{}%
-\contentsline {paragraph}{Project Owner}{7}{}%
-\contentsline {paragraph}{Developer}{7}{}%
-\contentsline {subsection}{\numberline {3.2}Bussines Domain}{8}{}%
-\contentsline {paragraph}{Organization}{8}{}%
-\contentsline {paragraph}{User}{8}{}%
-\contentsline {paragraph}{Device}{8}{}%
-\contentsline {paragraph}{Group}{8}{}%
-\contentsline {subsection}{\numberline {3.3}Scope}{8}{}%
-\contentsline {subsection}{\numberline {3.4}Goals}{9}{}%
-\contentsline {section}{\numberline {4}Software Design}{10}{}%
-\contentsline {subsection}{\numberline {4.1}Software Development Methods}{10}{}%
-\contentsline {subsubsection}{\numberline {4.1.1}Agile Software Development}{10}{}%
-\contentsline {subsubsection}{\numberline {4.1.2}Feature Driven Development}{10}{}%
-\contentsline {subsubsection}{\numberline {4.1.3}Develop an overall model}{11}{}%
-\contentsline {subsubsection}{\numberline {4.1.4}Feature list}{11}{}%
-\contentsline {subsection}{\numberline {4.2}Technology selection}{12}{}%
-\contentsline {subsubsection}{\numberline {4.2.1}Front-end}{12}{}%
-\contentsline {paragraph}{JAVASCRIPTl}{12}{}%
-\contentsline {paragraph}{React}{12}{}%
-\contentsline {paragraph}{React-Router}{12}{}%
-\contentsline {paragraph}{Redux}{12}{}%
-\contentsline {paragraph}{RTK}{12}{}%
-\contentsline {paragraph}{RTKQ}{12}{}%
-\contentsline {paragraph}{TailwindCSS}{12}{}%
-\contentsline {paragraph}{Semantic UI}{13}{}%
-\contentsline {paragraph}{Jest}{13}{}%
-\contentsline {subsubsection}{\numberline {4.2.2}Back-end}{13}{}%
-\contentsline {paragraph}{CSharp}{13}{}%
-\contentsline {paragraph}{dotNET Core}{13}{}%
-\contentsline {paragraph}{Entity Framework}{13}{}%
-\contentsline {subsubsection}{\numberline {4.2.3}Database}{13}{}%
-\contentsline {paragraph}{SQLite}{13}{}%
-\contentsline {subsubsection}{\numberline {4.2.4}Data communication}{13}{}%
-\contentsline {paragraph}{HTTP}{13}{}%
-\contentsline {paragraph}{Flatbuffers}{13}{}%
-\contentsline {paragraph}{MQTT}{14}{}%
-\contentsline {paragraph}{webrtc}{14}{}%
-\contentsline {subsubsection}{\numberline {4.2.5}DevOps}{14}{}%
-\contentsline {paragraph}{Git}{14}{}%
-\contentsline {paragraph}{GitHub}{14}{}%
-\contentsline {paragraph}{GitHub Actions}{14}{}%
-\contentsline {paragraph}{Docker}{14}{}%
-\contentsline {subsection}{\numberline {4.3}Architecture design}{15}{}%
-\contentsline {subsubsection}{\numberline {4.3.1}Front-end}{16}{}%
-\contentsline {paragraph}{Remote Access Interface}{16}{}%
-\contentsline {paragraph}{Tunnel Interface}{18}{}%
-\contentsline {subsubsection}{\numberline {4.3.2}Back-end}{19}{}%
-\contentsline {subsubsection}{\numberline {4.3.3}Data communication and storage}{20}{}%
-\contentsline {subsection}{\numberline {4.4}DevOps CI/CD process design}{22}{}%
-\contentsline {subsubsection}{\numberline {4.4.1}Continuous Integration}{22}{}%
-\contentsline {paragraph}{Pull Request}{22}{}%
-\contentsline {paragraph}{Continuous Testing}{22}{}%
-\contentsline {subsubsection}{\numberline {4.4.2}Continuous Delivery}{22}{}%
-\contentsline {paragraph}{E2E Testing}{23}{}%
-\contentsline {paragraph}{Performance Testing}{23}{}%
-\contentsline {subsubsection}{\numberline {4.4.3}Continuous Deployment}{23}{}%
-\contentsline {paragraph}{Production Environment}{23}{}%
-\contentsline {paragraph}{Comtinuing Opration}{23}{}%
-\contentsline {section}{\numberline {5}Software Development}{24}{}%
-\contentsline {subsection}{\numberline {5.1}Overall development}{24}{}%
-\contentsline {subsubsection}{\numberline {5.1.1}Front-end}{24}{}%
-\contentsline {paragraph}{Pages}{24}{}%
-\contentsline {paragraph}{Components}{25}{}%
-\contentsline {paragraph}{Hooks}{25}{}%
-\contentsline {paragraph}{Store}{25}{}%
-\contentsline {paragraph}{Utils}{29}{}%
-\contentsline {paragraph}{Styles}{29}{}%
-\contentsline {subsubsection}{\numberline {5.1.2}Back-end}{31}{}%
-\contentsline {paragraph}{Domain Layer}{32}{}%
-\contentsline {paragraph}{Application Layer}{32}{}%
-\contentsline {paragraph}{Infrastructure Layer}{32}{}%
-\contentsline {paragraph}{Test Layer}{34}{}%
-\contentsline {paragraph}{Dependecy Injection}{34}{}%
-\contentsline {subsubsection}{\numberline {5.1.3}DevOps}{35}{}%
-\contentsline {subsection}{\numberline {5.2}Feature development}{35}{}%
-\contentsline {subsubsection}{\numberline {5.2.1}Use Case 1}{35}{}%
-\contentsline {subsubsection}{\numberline {5.2.2}Feature 1}{35}{}%
-\contentsline {subsubsection}{\numberline {5.2.3}Feature 2}{35}{}%
-\contentsline {section}{\numberline {6}Conclusion}{36}{}%
-\contentsline {subsection}{\numberline {6.1}Result}{36}{}%
-\contentsline {subsection}{\numberline {6.2}Discussion}{36}{}%
-\contentsline {subsection}{\numberline {6.3}Future Work}{36}{}%
+\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {subsection}{\numberline {1.1}Background}{3}{}%
+\contentsline {subsection}{\numberline {1.2}The company}{3}{}%
+\contentsline {subsection}{\numberline {1.3}The project}{3}{}%
+\contentsline {section}{\numberline {2}Problem Statement}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Statement}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Situation}{4}{}%
+\contentsline {subsection}{\numberline {2.3}Potential Solution}{4}{}%
+\contentsline {section}{\numberline {3}Requirement Analysis}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Stakeholders}{5}{}%
+\contentsline {paragraph}{User}{5}{}%
+\contentsline {paragraph}{Project Owner}{5}{}%
+\contentsline {paragraph}{Developer}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Business Domain}{6}{}%
+\contentsline {paragraph}{Organization}{6}{}%
+\contentsline {paragraph}{User}{6}{}%
+\contentsline {paragraph}{Device}{6}{}%
+\contentsline {paragraph}{Group}{7}{}%
+\contentsline {subsection}{\numberline {3.3}Scope}{7}{}%
+\contentsline {subsection}{\numberline {3.4}Goals}{7}{}%
+\contentsline {section}{\numberline {4}Software Design}{8}{}%
+\contentsline {subsection}{\numberline {4.1}Software Development Methods}{8}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}Agile Software Development}{8}{}%
+\contentsline {subsubsection}{\numberline {4.1.2}Feature Driven Development}{9}{}%
+\contentsline {paragraph}{Develop an overall model}{9}{}%
+\contentsline {paragraph}{Feature list}{9}{}%
+\contentsline {subsection}{\numberline {4.2}Technology selection}{10}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}Front-end}{10}{}%
+\contentsline {paragraph}{JavaScript}{10}{}%
+\contentsline {paragraph}{React}{10}{}%
+\contentsline {paragraph}{React-Router}{10}{}%
+\contentsline {paragraph}{Redux}{10}{}%
+\contentsline {paragraph}{RTK}{10}{}%
+\contentsline {paragraph}{RTKQ}{10}{}%
+\contentsline {paragraph}{Tailwind CSS}{10}{}%
+\contentsline {paragraph}{Semantic UI}{11}{}%
+\contentsline {paragraph}{Jest}{11}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}Back-end}{11}{}%
+\contentsline {paragraph}{CSharp}{11}{}%
+\contentsline {paragraph}{dotNET Core}{11}{}%
+\contentsline {paragraph}{Entity Framework}{11}{}%
+\contentsline {paragraph}{xUnit}{11}{}%
+\contentsline {paragraph}{Moq}{11}{}%
+\contentsline {subsubsection}{\numberline {4.2.3}Database}{11}{}%
+\contentsline {paragraph}{SQLite}{11}{}%
+\contentsline {subsubsection}{\numberline {4.2.4}Data communication}{11}{}%
+\contentsline {paragraph}{HTTP}{11}{}%
+\contentsline {paragraph}{FlatBuffers}{12}{}%
+\contentsline {paragraph}{MQTT}{12}{}%
+\contentsline {paragraph}{WebRTC}{12}{}%
+\contentsline {subsubsection}{\numberline {4.2.5}DevOps}{12}{}%
+\contentsline {paragraph}{Git}{12}{}%
+\contentsline {paragraph}{GitHub}{12}{}%
+\contentsline {paragraph}{GitHub Actions}{12}{}%
+\contentsline {paragraph}{Docker}{12}{}%
+\contentsline {subsection}{\numberline {4.3}Architecture design}{13}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}Front-end}{14}{}%
+\contentsline {paragraph}{Remote Access Interface}{14}{}%
+\contentsline {paragraph}{Tunnel Interface}{16}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}Back-end}{17}{}%
+\contentsline {subsubsection}{\numberline {4.3.3}Data communication and storage}{18}{}%
+\contentsline {paragraph}{Selection of communication protocols}{18}{}%
+\contentsline {paragraph}{Communication architecture and flow of data communication}{18}{}%
+\contentsline {paragraph}{Data formats for data communication}{18}{}%
+\contentsline {paragraph}{Design of data storage:}{19}{}%
+\contentsline {subsection}{\numberline {4.4}DevOps CI/CD process design}{20}{}%
+\contentsline {subsubsection}{\numberline {4.4.1}Continuous Integration}{20}{}%
+\contentsline {paragraph}{Pull Request}{20}{}%
+\contentsline {paragraph}{Continuous Testing}{20}{}%
+\contentsline {subsubsection}{\numberline {4.4.2}Continuous Delivery}{20}{}%
+\contentsline {paragraph}{E2E Testing}{21}{}%
+\contentsline {paragraph}{Performance Testing}{21}{}%
+\contentsline {subsubsection}{\numberline {4.4.3}Continuous Deployment}{21}{}%
+\contentsline {paragraph}{Production Environment}{21}{}%
+\contentsline {paragraph}{Continuing Operation}{21}{}%
+\contentsline {section}{\numberline {5}Software Development}{22}{}%
+\contentsline {subsection}{\numberline {5.1}Overall development}{22}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Front-end}{22}{}%
+\contentsline {paragraph}{Pages}{22}{}%
+\contentsline {paragraph}{Components}{23}{}%
+\contentsline {paragraph}{Hooks}{23}{}%
+\contentsline {paragraph}{Store}{23}{}%
+\contentsline {paragraph}{Utils}{27}{}%
+\contentsline {paragraph}{Styles}{27}{}%
+\contentsline {subsubsection}{\numberline {5.1.2}Back-end}{29}{}%
+\contentsline {paragraph}{Domain Layer}{30}{}%
+\contentsline {paragraph}{Application Layer}{30}{}%
+\contentsline {paragraph}{Infrastructure Layer}{30}{}%
+\contentsline {paragraph}{Test Layer}{32}{}%
+\contentsline {paragraph}{Dependency Injection}{32}{}%
+\contentsline {subsubsection}{\numberline {5.1.3}DevOps}{33}{}%
+\contentsline {subsection}{\numberline {5.2}Feature development}{33}{}%
+\contentsline {subsubsection}{\numberline {5.2.1}Use Case 1}{33}{}%
+\contentsline {subsubsection}{\numberline {5.2.2}Feature 1}{33}{}%
+\contentsline {paragraph}{Front-end}{33}{}%
+\contentsline {paragraph}{Back-end}{34}{}%
+\contentsline {section}{\numberline {6}Conclusion}{35}{}%
+\contentsline {subsection}{\numberline {6.1}Result}{35}{}%
+\contentsline {subsection}{\numberline {6.2}Discussion}{35}{}%
+\contentsline {subsection}{\numberline {6.3}Future Work}{35}{}%

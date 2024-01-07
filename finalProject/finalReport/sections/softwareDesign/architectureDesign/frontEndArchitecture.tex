@@ -1,32 +1,29 @@
 In the architecture design of the front-end, the primary goal is to migrate the existing 
 remote access interface and the tunnel interface into the web application.
-And the secondary goal is refactoring the device manager as the well structured web application.
+And the secondary goal is refactoring the device manager as the well-structured web application.
 
 The front-end utilizes the React framework based on view design and the Redux framework 
 based on state and data flow.
 
 The structure of the React framework divides the web page into multiple components 
-based on modularity.Each component has its own state and properties.
+based on modularity. Each component has its own state and properties.
 
 Components are categorized into container components, presentational components, 
 and functional components.
 
 Container components manage data and state, presentational components display data 
-and state, and functional components implement specific functionalities.
-
-As beginning of this project, the migrate two interfaces which was use the vanilla JS, 
-have to be redesigned and refectoring to the React component.
+and state, and functional components implement specific functionalities
 
 \paragraph{Remote Access Interface}
 
-The remote access interface need to be redesigned as a single page application, 
-and its perpose is to provide the interface to create the reomote access connection, 
+The remote access interface needs to be redesigned as a single page application, 
+and its purpose is to provide the interface to create the remote access connection, 
 display the connection status, the device status, and the data stream from the device.
 
-For the UI of the remote access interface, the component will be inject into the RAI page 
-from the page component, and the component will be the bifrost page component which is 
+For the UI of the remote access interface, the component will be injected into the RAI page 
+from the page component, and the component will be the Bifrost page component which is 
 the reusable page component directory.  
-the pototype descibed following:
+The prototype described following:
 
 \begin{itemize}
     \item The top of the component is the status bar, which contains the status of the device.
@@ -37,31 +34,31 @@ the pototype descibed following:
         \item The right of the status bar is the exit session button, it will exit the current session.
     \end{itemize}
     \item The main content is the body of the component, which display the data stream from the device.
-    \item The bottom of the compoent is the control bar, it includes two part.
+    \item The bottom of the component control bar, it includes two part.
     \begin{itemize}
-        \item The left of the control bar is the tag swither, it will switch the data stream between the
+        \item The left of the control bar is the tag switcher, it will switch the data stream between the
         KVM data stream, and the serial data stream.
-        \item The right of the control bar is the control buttons, it include the setting button, 
+        \item The right of the control bar is the control buttons, it includes the setting button, 
         will display the setting menu, the full screen button, will display the data stream in full screen
-        in the browser, and keymap button, will display the keymap menu.
+        in the browser, and key map button, will display the key map menu.
     \end{itemize}
 \end{itemize}
 
 The UI state will be isolated from the session state which will be interactive with the session state.
-For UI the state will not store in the redux store, it will store in each of the component.
+For UI the state will not store in the Redux store, it will store in each of the component.
 
-For the session be create for this interface, it will be store in the redux store as the session state.
-The session state will be store in the session reducer, and the session reducer will be combine with
+For the session be created for this interface, it will be store in the Redux store as the session state.
+The session state will be store in the session reducer, and the session reducer will be combined with
 the root reducer. 
 
 The session state will be store as the object, and the object will be store in the session array.
-Use this pattern we can easily to create mutiple session for the remote access interface, and easily to 
+Use this pattern we can easily to create multiple session for the remote access interface, and easily to 
 manage, switch, and delete the session.
 
 Each session will have its own state, the state include:
 \begin{itemize}
-    \item id, which is the unique id for the session. Because each of the device can only
-    active one session at the same time, so the session id will be the same as the device serial number.
+    \item id, which is the unique ID for the session. Because each of the device can only
+    active one session at the same time, so the session ID will be the same as the device serial number.
     \item name, which is the name of the session, we can use the device name 
     as the session name.
     \item status, this is the flag of the session active or not.
@@ -69,38 +66,38 @@ Each session will have its own state, the state include:
     \item MQTT connection, which is the MQTT connection object of the session.
 \end{itemize}
 
-For create the session , there are some hooks will be use in the component, for example:
+For creating the session, there are some hooks will be use in the component, for example:
 \begin{itemize}
-    \item useCreateSession, this hook will be use to create the session, 
+    \item useCreateSession, this hook will be used to create the session, 
     and it will return the session object.
-    \item useCloseSession, this hook will be use to close the session, 
+    \item useCloseSession, this hook will be used to close the session, 
     and it will return the session object.
-    \item keepAliveSession, this hook will be use to keep the session alive, 
+    \item keepAliveSession, this hook will be used to keep the session alive, 
     and it will return the session object.
-    \item useMQTT, this hook will be use to subscribe the MQTT topic, receive the MQTT message, 
+    \item useMQTT, this hook will be used to subscribe the MQTT topic, receive the MQTT message, 
     and publish the MQTT message.
-    \item useWebRTC, this hook will be use to create the WebRTC connection, and so on.
-    \item useFlatBuffer, this hook will be use to process the flatbuffer message.
+    \item useWebRTC, this hook will be used to create the WebRTC connection, and so on.
+    \item useFlatBuffer, this hook will be used to process the FlatBuffer message.
 \end{itemize}
 
 \paragraph{Tunnel Interface}
 Same as the remote access interface, the tunnel interface also need to be redesigned  
 as a single page application,
-and its perpose is to provide the interface to create the tunnel connection, display the connection status,
+and its purpose is to provide the interface to create the tunnel connection, display the connection status,
 the device status, and the data stream from the device.
 
 For the UI of the tunnel interface, it will be following the same pattern as the remote access interface,
 and the UI design will be little different.
 
-The reason fot the different UI design is the tunnel interface will be use two device to create the tunnel,
+The reason for the different UI design is the tunnel interface will be use two devices to create the tunnel,
 connecting each of the end point though the tunnel.
 
-The UI will be scribed following:
+The UI will be scribes following:
 \begin{itemize}
-    \item The top of the component is the connecting status bar, which contains the each of the device status.
+    \item The top of the component is the connecting status bar, which contains each of the device status.
     Between the two device status will be the tunnel status. 
-    \item The main content is the body of the component, excipt to display the data stream from the device, 
-    it also include a sidebar for display the IP mapping list.
+    \item The main content is the body of the component, except to display the data stream from the device, 
+    it also includes a sidebar for display the IP mapping list.
 \end{itemize}
 
 The rest of the state design and the hooks design will be the same as the remote access interface 

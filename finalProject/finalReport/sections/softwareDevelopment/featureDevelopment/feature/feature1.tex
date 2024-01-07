@@ -1,0 +1,24 @@
+\paragraph{Front-end}
+To be able to display the data from the back-end, we need to make a request to
+the back-end. The request is made by using the \texttt{fetch} API. 
+
+In the \texttt{deviceComponet} we need use the customer hook \texttt{useGetAllDevices}
+to get the device list from the back-end. 
+
+After the request is made, we need to handle the response from the back-end.
+The response is a JSON object, we need to parse the JSON object to the DOM object.
+
+And then, we need to display the device list on the device page.
+
+\paragraph{Back-end}
+
+To be able to response the request from the front-end, we need to implement the webAPI controller
+to handle the request.
+
+And then, the webAPI controller will call the service to get the device list from the domain service.
+
+The domain service will invoke the repository to get the device list from the database.
+
+After the device list is got from the database, the domain service will return the device list to the webAPI controller.
+
+The webAPI controller will return the device list to the front-end.
